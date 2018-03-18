@@ -86,8 +86,9 @@ tr {
     border: 1px solid #000000;
     padding: 8px;
     text-align: center;
-    vertical-align: inherit font-size: 30px;
-    width: 25%;
+    vertical-align: inherit ;
+    font-size: 30px;
+     width: 25%;
 }
 
 div1 {
