@@ -12,6 +12,7 @@
 
 <body>
     <form id="form1" runat="server">
+        <div class="square"></div>
     <div>
         <nav>
             <ul>
@@ -27,9 +28,7 @@
         </nav>
     </div>
 <div class="loginDiv">
-                &nbsp;<asp:Login ID="Login1" runat="server" Height="128px" Width="341px">
-                </asp:Login>
-                </div>
+                &nbsp;</div>
     <div id="div1">
         <asp:TextBox ID="scoreForm" type="hidden" name="score" value="0" runat="server"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;
@@ -52,8 +51,7 @@
 
         <div id="myModal" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <p>&nbsp;</p>
   </div>
             
 </div>
