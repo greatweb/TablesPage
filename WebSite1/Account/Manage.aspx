@@ -3,7 +3,7 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
+    <h2><%: User.Identity.GetUserName() %>.</h2>
 
     <div>
         <asp:PlaceHolder runat="server" ID="successMessage" Visible="false" ViewStateMode="Disabled">
@@ -56,6 +56,9 @@
                         </div>
                     </div>
                 </asp:PlaceHolder>
+
+                <asp:Label ID="PaulTestLabel" runat="server" Text="lblLoginName"></asp:Label>
+                <asp:Label ID="lblValue" runat="server" Text="lblLoginUserValue"></asp:Label>
 
                 <asp:PlaceHolder runat="server" ID="changePasswordHolder" Visible="false">
                     <p>You're logged in as <strong><%: User.Identity.GetUserName() %></strong>.</p>

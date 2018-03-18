@@ -26,7 +26,8 @@ public partial class Account_Manage : System.Web.UI.Page
 
     protected void Page_Load()
     {
-        if (!IsPostBack)
+        lblValue.Text = User.Identity.GetUserName() + "(" + User.Identity.GetUserId() + ")";   
+                if (!IsPostBack)
         {
             // Determine the sections to render
             UserManager manager = new UserManager();
