@@ -33,8 +33,9 @@
     <div id="div1">
         <asp:TextBox ID="scoreForm" type="hidden" name="score" value="0" runat="server"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox1" runat="server" placeholder ="Name"></asp:TextBox>
-&nbsp;<br/>
+        <asp:TextBox ID="TextBox1" runat="server" placeholder ="Name"></asp:TextBox>
+-&nbsp;<br/>
+            &nbsp;<br/>
             
         
              &nbsp;<asp:Button ID="Button1" runat="server"   style="margin-left: 15px" Text="Submit Your Score" Width="167px" />
