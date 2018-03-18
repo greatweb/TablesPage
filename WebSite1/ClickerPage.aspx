@@ -38,6 +38,10 @@
             
         
              &nbsp;<asp:Button ID="Button1" runat="server"   style="margin-left: 15px" Text="Submit Your Score" Width="167px" />
+
+                <asp:Label ID="PaulTestLabel" runat="server" Text="lblLoginName"></asp:Label>
+                <asp:Label ID="lblValue" runat="server" Text="lblLoginUserValue"></asp:Label>
+
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MaximGameConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Leaderboard]"></asp:SqlDataSource>
         </div>
 
