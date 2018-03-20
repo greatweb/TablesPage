@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Clicker</title>
-    <link rel="shortcut icon" href="hand.png" width="20" height="10" />
+    <link rel="shortcut icon" href="hand.png" />
     <link href="CSS/StyleSheet1.css" rel="stylesheet" />
 </head>
 
@@ -18,11 +18,6 @@
             <ul>
                 <li><a href="MaximPage.aspx">Home</a></li>
                 <li><a href="leaderboard.aspx">Leaderboard</a></li>
-                
-                <li>
-    
-   
-                </li>
                 
             </ul>
         </nav>
@@ -37,7 +32,7 @@
             &nbsp;<br/>
             
         
-             &nbsp;<asp:Button ID="Button1" runat="server"   style="margin-left: 15px" Text="Submit Your Score" Width="167px" />
+             &nbsp;<asp:Button ID="Button1" runat="server"   style="margin-left: 15px" Text="Submit Your Score" Width="167px" OnClick="Button1_Click" />
 
                 <asp:Label ID="PaulTestLabel" runat="server" Text="lblLoginName"></asp:Label>
                 <asp:Label ID="lblValue" runat="server" Text="lblLoginUserValue"></asp:Label>
@@ -45,9 +40,9 @@
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MaximGameConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Leaderboard]"></asp:SqlDataSource>
         </div>
 
-
+         
     <h3>Your Score Is</h3>
-    <label for="score" id="score" name="lbl_score">0</label>
+    <label for="score" id="score">0</label>
     <h2 id="demo"></h2>
     <button type="button" id="btn" onclick="addScore()">Click Me!</button>
 
