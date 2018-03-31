@@ -40,7 +40,7 @@ nav ul {
 }
 
 div {
-    width: 4px;
+    width: 380px;
 }
 
 nav ul li {
@@ -80,8 +80,9 @@ th {
 }
 
 td {
-    background-color: #ba99c0;
+    background-color: mediumpurple;
     text-align: center;
+    width: 1870px;
 }
 
 tr {
@@ -154,3 +155,4 @@ div1 {
 demo {
     width: 100px;
 }
+

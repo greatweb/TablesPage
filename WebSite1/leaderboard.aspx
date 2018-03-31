@@ -18,9 +18,12 @@
                     <li><a href="ClickerPage.aspx">Home</a></li>
                     <li><a href="TablesMenu.aspx">Tables</a></li>
                 </ul>
+                <br />
+                <br />
+                <br />
             </nav>
         </div>
-        <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged1">
+        <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged1" Width="935px">
         </asp:GridView>
     </form>
     </body>

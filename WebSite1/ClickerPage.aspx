@@ -38,9 +38,9 @@
 
                 <asp:Label ID="PaulTestLabel" runat="server" Text="lblLoginName"></asp:Label>
                 <asp:Label ID="lblValue" runat="server" Text="lblLoginUserValue"></asp:Label>
-
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MaximGameConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Leaderboard]"></asp:SqlDataSource>
-        </div>
+</div>
+        <input onclick="window.location.href='leaderboard.aspx'" style="height: 41px; width: 217px; margin-top: 0px;" type="button" value="Leaderboard" /><asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MaximGameConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Leaderboard]"></asp:SqlDataSource>
+        
 
          
     <h3>Your Score Is</h3>
@@ -50,13 +50,8 @@
 
     <button type="button" id="btn2" onclick="initialise()">Reset!</button>
 
-        <div id="myModal" class="modal">
-  <div class="modal-content">
-    <p>&nbsp;</p>
-  </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              
-</div>
-   
 
     <script> 
 
@@ -196,14 +191,8 @@
     height: 140px;
     
 }</style>
-            <asp:ScriptManager ID="ScriptManager1" runat="server">
-
-            </asp:ScriptManager>
-            <asp:ImageButton ID="ImageButton1" runat="server" Height="131px" ImageUrl="~/Image/Menu_Icon.png" style="margin-bottom: 53px" Width="142px" />
-            <asp:Panel ID="Panel1" runat="server" CssClass="modalPopup">Menu<br />
-                <asp:ImageButton ID="Close" runat="server" Height="64px" ImageUrl="~/Image/RedX.svg.png" Width="78px" />
-            </asp:Panel>
-           <ajaxToolkit:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass ="modalBackground" OkControlID="Close" PopupControlID="Panel1" TargetControlID="ImageButton1"></ajaxToolkit:ModalPopupExtender>
     </form>
+    <p>
+        &nbsp;</p>
 </body>
 </html>
