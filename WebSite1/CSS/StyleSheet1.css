@@ -14,10 +14,13 @@ label {
 
 button {
     font-size: 500%;
+    height: 114px;
+    width: 334px;
 }
 
 h2 {
     font-size: 250%;
+    width: 266px;
 }
 
 h3 {
@@ -37,7 +40,7 @@ nav ul {
 }
 
 div {
-    width: 267px;
+    width: 4px;
 }
 
 nav ul li {
@@ -135,4 +138,19 @@ div1 {
 .square{
     top: 0;
     width: 1870px;
+}
+
+.tables{
+    font-size: 18px;
+    width: 745px;
+}
+
+.buttonTables {
+    height: 146px;
+    width: 326px;
+    font-size: 90px;
+}
+
+demo {
+    width: 100px;
 }

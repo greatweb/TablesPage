@@ -16,10 +16,12 @@
     <div>
         <nav>
             <ul>
-                <li><a href="MaximPage.aspx">Home</a></li>
-                <li><a href="leaderboard.aspx">Leaderboard</a></li>
-                
+                <li><a href="ClickerPage.aspx">Home</a></li>
+                <li><a href="TablesMenu.aspx">Tables</a></li>
             </ul>
+            <br />
+            <br />
+            <br />
         </nav>
     </div>
 <div class="loginDiv">
@@ -52,7 +54,7 @@
   <div class="modal-content">
     <p>&nbsp;</p>
   </div>
-            
+             
 </div>
    
 
