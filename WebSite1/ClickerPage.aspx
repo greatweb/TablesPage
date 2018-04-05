@@ -29,14 +29,14 @@
     <div id="div1">
         <asp:TextBox ID="scoreForm" type="hidden" name="score" value="0" runat="server"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox1" runat="server" placeholder ="Name"></asp:TextBox>
+        <asp:TextBox ID="TextBox1"  runat="server" placeholder="Name"></asp:TextBox>
 -&nbsp;<br/>
             &nbsp;<br/>
             
         
              &nbsp;<asp:Button ID="Button1" runat="server"   style="margin-left: 15px" Text="Submit Your Score" Width="167px" OnClick="Button1_Click" />
 
-                <asp:Label ID="PaulTestLabel" runat="server" Text="lblLoginName"></asp:Label>
+                <asp:Label ID="MaximTestLabel" runat="server" Text="lblLoginName"></asp:Label>
                 <asp:Label ID="lblValue" runat="server" Text="lblLoginUserValue"></asp:Label>
 </div>
         <input onclick="window.location.href='leaderboard.aspx'" style="height: 41px; width: 217px; margin-top: 0px;" type="button" value="Leaderboard" /><asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MaximGameConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Leaderboard]"></asp:SqlDataSource>

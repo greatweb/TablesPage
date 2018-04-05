@@ -19,7 +19,7 @@
             <nav>
                 <ul>
                     <li><a href="ClickerPage.aspx">Home</a></li>
-                    <li><a href="TablesMenu.aspx">Tables</a></li>
+                    <li><a href="TablesMenu4.aspx">Tables</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +34,7 @@
 
 
             <asp:Label ID="Label1x1" runat="server" Text="1 x 1 ="></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
             <h5 id="err"></h5>
         <div id="div2" style="font-size: 18px; width: 500px; float: right; height: 314px; margin-top: 0px;">
             <asp:Label ID="Label1x7" runat="server" Text="1 x 7 ="></asp:Label>
