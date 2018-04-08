@@ -17,7 +17,7 @@
         <nav>
             <ul>
                 <li><a href="ClickerPage.aspx">Home</a></li>
-                <li><a href="TablesMenu.aspx">Tables</a></li>
+                <li><a href="TablesMenu4.aspx">Tables</a></li>
             </ul>
             <br />
             <br />

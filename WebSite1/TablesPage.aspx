@@ -34,54 +34,85 @@
 
 
             <asp:Label ID="Label1x1" runat="server" Text="1 x 1 ="></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-            <h5 id="err"></h5>
+            <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged" autocomplete="off"></asp:TextBox>
+            <br />
         <div id="div2" style="font-size: 18px; width: 500px; float: right; height: 314px; margin-top: 0px;">
             <asp:Label ID="Label1x7" runat="server" Text="1 x 7 ="></asp:Label>
-            <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox7" runat="server" autocomplete="off"></asp:TextBox>
+            <br />
+            <asp:Label ID="Label7" runat="server" Text=""></asp:Label>
             <p>
                 <asp:Label ID="Label1x8" runat="server" Text="1 x 8 ="></asp:Label>
-                <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox8" runat="server" autocomplete="off"></asp:TextBox>
+            </p>
+            <p>
+                <asp:Label ID="Label8" runat="server" Text=""></asp:Label>
             </p>
             <asp:Label ID="Label1x9" runat="server" Text="1 x 9 ="></asp:Label>
 
-            <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox12" runat="server" autocomplete="off"></asp:TextBox>
+
+            <br />
+            <asp:Label ID="Label9" runat="server" Text=""></asp:Label>
 
             <p>
                 <asp:Label ID="Label1x10" runat="server" Text="1 x 10 ="></asp:Label>
-                <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox9" runat="server" autocomplete="off"></asp:TextBox>
+            </p>
+            <p>
+                <asp:Label ID="Label10" runat="server" Text=""></asp:Label>
             </p>
             <p>
                 <asp:Label ID="Label1x11" runat="server" Text="1 x 11 ="></asp:Label>
-                <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox10" runat="server" autocomplete="off"></asp:TextBox>
+            </p>
+            <p>
+                <asp:Label ID="Label11" runat="server" Text=""></asp:Label>
             </p>
 
             <p>
                 <asp:Label ID="Label1x12" runat="server" Text="1 x 12 = "></asp:Label>
-                <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox11" runat="server" autocomplete="off"></asp:TextBox>
+            </p>
+            <p>
+                <asp:Label ID="Label12" runat="server" Text=""></asp:Label>
             </p>
         </div>
+            <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
             <p>
                 <asp:Label ID="Label1x2" runat="server" Text="1 x 2 ="></asp:Label>
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" autocomplete="off"></asp:TextBox>
+            </p>
+            <p>
+                <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
             </p>
             <asp:Label ID="Label1x3" runat="server" Text="1 x 3 ="></asp:Label>
-            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox3" runat="server" autocomplete="off" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
+            <br />
+            <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
             <p>
                 <asp:Label ID="Label1x4" runat="server" Text="1 x 4 ="></asp:Label>
-                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox4" runat="server" autocomplete="off"></asp:TextBox>
+            </p>
+            <p>
+                <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
             </p>
             <asp:Label ID="Label1x5" runat="server" Text="1 x 5 ="></asp:Label>
-            <asp:TextBox ID="TextBox1x5" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox1x5" runat="server" autocomplete="off"></asp:TextBox>
+
+            <asp:Label ID="Label5" runat="server" Text=""></asp:Label>
 
             <p>
                 <asp:Label ID="Label1x6" runat="server" Text="1 x 6 ="></asp:Label>
-                <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox6" runat="server" autocomplete="off"></asp:TextBox>
+            </p>
+            <p>
+                <asp:Label ID="Label6" runat="server" Text=""></asp:Label>
             </p>
         </div>
 
 
-        <button type="button" id="button2" runat="server" onclick="check()" class="buttonTables">Confirm</button>
+        <asp:button id="confirm" runat="server" onclick="Button2_Click" class="buttonTables" Text="Confirm" Height="150px" Width="337px"/>
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button type="button" id="button1" onclick="initialise()" class="buttonTables">Start</button>
 

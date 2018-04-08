@@ -144,13 +144,15 @@ div1 {
 .tables{
     font-size: 18px;
     width: 745px;
+    height: 530px;
 }
 
+
+
 .buttonTables {
-    height: 146px;
-    width: 326px;
     font-size: 90px;
 }
+
 
 demo {
     width: 100px;
