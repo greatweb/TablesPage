@@ -20,13 +20,15 @@
                 <ul>
                     <li><a href="ClickerPage.aspx">Home</a></li>
                     <li><a href="TablesMenu4.aspx">Tables</a></li>
+                    <li><a href="Account/Login.aspx">Login</a></li>
                 </ul>
             </nav>
         </div>
 
         <br />
-        <h2 id="demo" style="float:right; color: black;"></h2>
 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
         <br />
         <br />
 
@@ -39,6 +41,8 @@
         <div id="div2" style="font-size: 18px; width: 500px; float: right; height: 314px; margin-top: 0px;">
             <asp:Label ID="Label1x7" runat="server" Text="1 x 7 ="></asp:Label>
             <asp:TextBox ID="TextBox7" runat="server" autocomplete="off"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="lblCounter" runat="server" Text=""></asp:Label>
             <br />
             <asp:Label ID="Label7" runat="server" Text=""></asp:Label>
             <p>
@@ -52,8 +56,15 @@
 
             <asp:TextBox ID="TextBox12" runat="server" autocomplete="off"></asp:TextBox>
 
+            &nbsp;&nbsp;<asp:Label ID="lblTimeTaken" runat="server" Text=""></asp:Label>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:label runat="server" id="demo" style="float:right; color: black;" Text=""></asp:label>
+
             <br />
             <asp:Label ID="Label9" runat="server" Text=""></asp:Label>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
             <p>
                 <asp:Label ID="Label1x10" runat="server" Text="1 x 10 ="></asp:Label>
@@ -73,6 +84,7 @@
             <p>
                 <asp:Label ID="Label1x12" runat="server" Text="1 x 12 = "></asp:Label>
                 <asp:TextBox ID="TextBox11" runat="server" autocomplete="off"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </p>
             <p>
                 <asp:Label ID="Label12" runat="server" Text=""></asp:Label>
@@ -98,7 +110,7 @@
                 <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
             </p>
             <asp:Label ID="Label1x5" runat="server" Text="1 x 5 ="></asp:Label>
-            <asp:TextBox ID="TextBox1x5" runat="server" autocomplete="off"></asp:TextBox>
+            <asp:TextBox ID="TextBox5" runat="server" autocomplete="off"></asp:TextBox>
 
             <asp:Label ID="Label5" runat="server" Text=""></asp:Label>
 
@@ -112,11 +124,10 @@
         </div>
 
 
-        <asp:button id="confirm" runat="server" onclick="Button2_Click" class="buttonTables" Text="Confirm" Height="150px" Width="337px"/>
+        <asp:button id="confirm" runat="server" onclick="Button2_Click" class="buttonTables" Text="Confirm" Height="114px" Width="337px"/>
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button type="button" id="button1" onclick="initialise()" class="buttonTables">Start</button>
 
-    </form>
     <script>
         function check() {
             var a = document.getElementById("textbox1");
@@ -133,7 +144,7 @@
 
             document.getElementById("button1").disabled = false;
 
-            var Timer = new Date(); Timer.setSeconds(Timer.getSeconds() + 10);
+            var Timer = new Date(); Timer.setSeconds(Timer.getSeconds() + 30);
 
 
 
@@ -153,7 +164,9 @@
                 var mseconds = Math.floor((distance % (1000)));
 
 
-                document.getElementById("demo").innerHTML = seconds + "s " + mseconds + "ms";
+                document.getElementById('demo').innerHTML = seconds + 's' + mseconds + 'ms';
+
+                document.getElementById('lblTimeTaken').innerHTML = seconds + '.' + mseconds ;
 
 
                 if (distance < 0) {
@@ -164,7 +177,7 @@
                     document.getElementById("TextBox2").disabled = true;
                     document.getElementById("TextBox3").disabled = true;
                     document.getElementById("TextBox4").disabled = true;
-                    document.getElementById("TextBox1x5").disabled = true;
+                    document.getElementById("TextBox5").disabled = true;
                     document.getElementById("TextBox6").disabled = true;
                     document.getElementById("TextBox7").disabled = true;
                     document.getElementById("TextBox8").disabled = true;
@@ -174,13 +187,13 @@
                     document.getElementById("TextBox12").disabled = true;
                 }
             }, 10);
-            if (distance = 10) {
+            if (distance = 30) {
                 document.getElementById("button1").disabled = true;
                 document.getElementById("TextBox1").disabled = false;
                 document.getElementById("TextBox2").disabled = false;
                 document.getElementById("TextBox3").disabled = false;
                 document.getElementById("TextBox4").disabled = false;
-                document.getElementById("TextBox1x5").disabled = false;
+                document.getElementById("TextBox5").disabled = false;
                 document.getElementById("TextBox6").disabled = false;
                 document.getElementById("TextBox7").disabled = false;
                 document.getElementById("TextBox8").disabled = false;
@@ -194,5 +207,7 @@
         }
 
     </script>
-</body>
+
+    </form>
+    </body>
 </html>
