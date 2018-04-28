@@ -79,6 +79,14 @@ public partial class Default3 : System.Web.UI.Page
         int txtBoxAnswer3 = 0;
         String strMode = Request.QueryString["mode"];
         String strNumber = Request.QueryString["number"];
+        if (strMode == null) {
+            strMode = "M";
+            strNumber = "1";
+        }
+
+
+
+
         int dividingNumber = 0;
         int ifSymbol = 0;
 
@@ -90,35 +98,34 @@ public partial class Default3 : System.Web.UI.Page
 
             while (randomList.Count < 12)
             {
+                //If Mode is subtraction
                 if (strMode == "S")
                 {
-                    MyNumber = randomizer.Next(dividingNumber, dividingNumber + 13);
+                    MyNumber = randomizer.Next(dividingNumber, dividingNumber + 12);
                     if (!randomList.Contains(MyNumber))
                     {
                         randomList.Add(MyNumber);
                     }
                 }
-                else
+                //If Mode is Division
+                else if (strMode == "D")
                 {
-                    if (strMode == "D")
+                    MyNumber = randomizer.Next(1, 13) * dividingNumber;
+                    if (!randomList.Contains(MyNumber))
                     {
-                        MyNumber = randomizer.Next(dividingNumber, 13);
-                        if (!randomList.Contains(MyNumber * 2))
-                        {
-                            randomList.Add(MyNumber * 2);
-                        }
-                    }
-                    else
-                    {
-                        if (strMode == "A" || strMode == "M")
-                        {
-                            if (!randomList.Contains(MyNumber))
-                            {
-                                randomList.Add(MyNumber);
-                            }
-                        }
+                        randomList.Add(MyNumber);
                     }
                 }
+                //If Mode is Anything else  (i.e. Add or Multiply)
+                else
+                {
+                    MyNumber = randomizer.Next(1, 13);
+                    if (!randomList.Contains(MyNumber))
+                    {
+                        randomList.Add(MyNumber);
+                    }
+                }
+
 
             }
             {

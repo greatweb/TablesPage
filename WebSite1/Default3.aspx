@@ -25,7 +25,7 @@
                 <td>
                     <asp:Label ID="lblNo1B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                <asp:TextBox ID="txtAns1" runat="server" OnTextChanged="txtAns1_TextChanged"/></td>
+                <asp:TextBox ID="txtAns1" runat="server" /></td>
                 <td>
                     <asp:Image ID="imgAnswer1" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label1" visible="false" runat="server" Text=""></asp:Label>
