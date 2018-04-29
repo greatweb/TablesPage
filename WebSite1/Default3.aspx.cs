@@ -982,6 +982,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label1.Text = "Correct";
                 imgAnswer1.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -992,6 +993,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label2.Text = "Correct";
                 imgAnswer2.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1002,6 +1004,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label3.Text = "Correct";
                 imgAnswer3.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1012,6 +1015,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label4.Text = "Correct";
                 imgAnswer4.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1022,6 +1026,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label5.Text = "Correct";
                 imgAnswer5.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1032,6 +1037,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label6.Text = "Correct";
                 imgAnswer6.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1042,6 +1048,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label7.Text = "Correct";
                 imgAnswer7.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1052,6 +1059,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label8.Text = "Correct";
                 imgAnswer8.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1062,6 +1070,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label9.Text = "Correct";
                 imgAnswer9.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1072,6 +1081,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label10.Text = "Correct";
                 imgAnswer10.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1082,6 +1092,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label11.Text = "Correct";
                 imgAnswer11.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1092,6 +1103,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label12.Text = "Correct";
                 imgAnswer12.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1105,6 +1117,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label1.Text = "Correct";
                 imgAnswer1.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1115,6 +1128,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label2.Text = "Correct";
                 imgAnswer2.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1125,6 +1139,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label3.Text = "Correct";
                 imgAnswer3.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1135,6 +1150,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label4.Text = "Correct";
                 imgAnswer4.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1145,16 +1161,19 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label5.Text = "Correct";
                 imgAnswer5.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
                 Label5.Text = "Incorrect";
                 imgAnswer5.ImageUrl = "/Image/IncorrectMascot.png";
+                counter = counter + 1;
             }
             if (answer6 == ListItem6 - dividingNumber)
             {
                 Label6.Text = "Correct";
                 imgAnswer6.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1165,6 +1184,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label7.Text = "Correct";
                 imgAnswer7.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1175,6 +1195,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label8.Text = "Correct";
                 imgAnswer8.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1185,6 +1206,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label9.Text = "Correct";
                 imgAnswer9.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1195,6 +1217,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label10.Text = "Correct";
                 imgAnswer10.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1205,6 +1228,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label11.Text = "Correct";
                 imgAnswer11.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1215,6 +1239,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label12.Text = "Correct";
                 imgAnswer12.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1228,6 +1253,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label1.Text = "Correct";
                 imgAnswer1.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1238,6 +1264,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label2.Text = "Correct";
                 imgAnswer2.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1248,6 +1275,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label3.Text = "Correct";
                 imgAnswer3.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1258,6 +1286,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label4.Text = "Correct";
                 imgAnswer4.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1268,6 +1297,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label5.Text = "Correct";
                 imgAnswer5.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1278,6 +1308,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label6.Text = "Correct";
                 imgAnswer6.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1288,6 +1319,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label7.Text = "Correct";
                 imgAnswer7.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1298,6 +1330,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label8.Text = "Correct";
                 imgAnswer8.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1308,6 +1341,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label9.Text = "Correct";
                 imgAnswer9.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1318,6 +1352,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label10.Text = "Correct";
                 imgAnswer10.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1328,6 +1363,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label11.Text = "Correct";
                 imgAnswer11.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1338,6 +1374,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label12.Text = "Correct";
                 imgAnswer12.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1351,6 +1388,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label1.Text = "Correct";
                 imgAnswer1.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1361,6 +1399,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label2.Text = "Correct";
                 imgAnswer2.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1371,6 +1410,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label3.Text = "Correct";
                 imgAnswer3.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1381,6 +1421,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label4.Text = "Correct";
                 imgAnswer4.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1391,6 +1432,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label5.Text = "Correct";
                 imgAnswer5.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1401,6 +1443,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label6.Text = "Correct";
                 imgAnswer6.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1411,6 +1454,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label7.Text = "Correct";
                 imgAnswer7.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1421,6 +1465,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label8.Text = "Correct";
                 imgAnswer8.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1431,6 +1476,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label9.Text = "Correct";
                 imgAnswer9.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1441,6 +1487,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label10.Text = "Correct";
                 imgAnswer10.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1451,6 +1498,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label11.Text = "Correct";
                 imgAnswer11.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1461,6 +1509,7 @@ public partial class Default3 : System.Web.UI.Page
             {
                 Label12.Text = "Correct";
                 imgAnswer12.ImageUrl = "/Image/CorrectMascot.png";
+                counter = counter + 1;
             }
             else
             {
@@ -1468,5 +1517,17 @@ public partial class Default3 : System.Web.UI.Page
                 imgAnswer12.ImageUrl = "/Image/IncorrectMascot.png";
             }
         }
+
+        con.Open();
+        SqlCommand cmd = con.CreateCommand();
+        cmd.CommandType = CommandType.Text;
+        cmd.CommandText = "insert into tablesScore2 ( UserID, TimeTaken, DateAndTime, Score, Operator, OperandNumber) values ('"+ User.Identity.GetUserId()+"', 4.968, GETDATE(), "+ counter +", '"+strMode+"',"+strNumber+")";
+        cmd.ExecuteNonQuery();
+        con.Close();
+
+        if (counter == 12)
+        { GoldMedal.ImageUrl = "/Image/CDPicture.png"; }
+        if (counter == 11)
+        { SilverMedal.ImageUrl = "/Image/SilverStar.png"; }
     }
 }

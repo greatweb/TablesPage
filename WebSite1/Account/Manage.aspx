@@ -4,6 +4,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: User.Identity.GetUserName() %>.</h2>
+    <a href="../Default3.aspx">Tables</a>
 
     <div>
         <asp:PlaceHolder runat="server" ID="successMessage" Visible="false" ViewStateMode="Disabled">

@@ -15,11 +15,12 @@
 
     <form id="form1" runat="server">
         <div>
+            <h2 id="demo" style="float:right; width: 162px; height: 78px;"></h2>
         </div>
         <table>
             <tr>
                 <td>
-                    <asp:Label ID="lblNo1A" runat="server" Text="lblNo1A | " /></td>
+                    <asp:Label ID="lblNo1A" runat="server" Text="lblNo1A | " onkeydown="if(event.keyCode==13) {event.keyCode=9;}"/></td>
                 <td>
                     <asp:Label ID="lbl1Op" runat="server" Text="lbl1Op | " /></td>
                 <td>
@@ -74,9 +75,12 @@
                     <asp:Image ID="imgAnswer4" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label4" visible="false" runat="server" Text=""></asp:Label>
                 </td>
+                
             </tr>
 
         </table>
+                    <asp:Image ID="GoldMedal" runat="server" style="float:right" Width="100px" Height="100px" />
+
         <table>
             <tr>
                 <td>
@@ -132,10 +136,12 @@
                 <td>
                     <asp:Image ID="imgAnswer8" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label8" visible="false" runat="server" Text=""></asp:Label>
+                
                 </td>
             </tr>
 
         </table>
+        <asp:Image ID="SilverMedal" runat="server" Style="float:right" Width="100px" Height="100px" />
         <table>
             <tr>
                 <td>
@@ -201,6 +207,36 @@
         <br />
         <asp:Button ID="Button1" runat="server" Height="145px" Text="Button" Width="220px" OnClick="Button1_Click" />
     &nbsp;
+        <script>
+            function initialise() {
+
+            clearInterval(x);
+
+            var Timer = new Date(); Timer.setSeconds(Timer.getSeconds() + 30);
+
+
+
+            var x = setInterval(function () {
+
+
+                var now = new Date().getTime();
+
+
+                var distance = Timer - now;
+
+
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                var mseconds = Math.floor((distance % (1000)));
+
+
+                document.getElementById('demo').innerHTML = seconds + 's' + mseconds + 'ms';
+
+                document.getElementById('lblTimeTaken').innerHTML = seconds + '.' + mseconds ;
+
+        </script>
         
     </form>
 </body>
