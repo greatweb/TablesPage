@@ -144,11 +144,12 @@
 
             document.getElementById("button1").disabled = false;
 
-            var Timer = new Date(); Timer.setSeconds(Timer.getSeconds() + 30);
+            var Timer = new Date(); Timer.setSeconds(Timer.getSeconds() + 10);
 
 
 
-            var x = setInterval(function () {
+            var x = setInterval(function ()
+            {
 
 
                 var now = new Date().getTime();
