@@ -63,6 +63,7 @@ public partial class Default3 : System.Web.UI.Page
     int ListItem10 = 0;
     int ListItem11 = 0;
     int ListItem12 = 0;
+    decimal timeTaken2 = 0;
 
     int dividingNumber = 0;
     int ifSymbol = 0;
@@ -1518,10 +1519,12 @@ public partial class Default3 : System.Web.UI.Page
             }
         }
 
+        timeTaken2 = Convert.ToDecimal(lblTimer.Text);
+        decimal test= Convert.ToDecimal(txtTimer.Text);
         con.Open();
         SqlCommand cmd = con.CreateCommand();
         cmd.CommandType = CommandType.Text;
-        cmd.CommandText = "insert into tablesScore2 ( UserID, TimeTaken, DateAndTime, Score, Operator, OperandNumber) values ('"+ User.Identity.GetUserId()+"', 4.968, GETDATE(), "+ counter +", '"+strMode+"',"+strNumber+")";
+        cmd.CommandText = "insert into tablesScore2 ( UserID, TimeTaken, DateAndTime, Score, Operator, OperandNumber) values ('"+ User.Identity.GetUserId()+"', "+ test +", GETDATE(), "+ counter +", '"+strMode+"',"+strNumber+")";
         cmd.ExecuteNonQuery();
         con.Close();
 
@@ -1529,5 +1532,7 @@ public partial class Default3 : System.Web.UI.Page
         { GoldMedal.ImageUrl = "/Image/CDPicture.png"; }
         if (counter == 11)
         { SilverMedal.ImageUrl = "/Image/SilverStar.png"; }
+
+
     }
 }

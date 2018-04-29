@@ -25,7 +25,6 @@
 
     <form id="form1" runat="server">
         <div>
-            <asp:Label runat="server" ID="demo" Style="float: right; color: black;" Text="Time"></asp:Label>
         </div>
         <table>
             <tr>
@@ -216,7 +215,7 @@
         <br />
         <br />
         <asp:Button ID="Button1" runat="server" Height="145px" Text="Confirm" Width="220px" OnClick="Button1_Click" />
-        &nbsp;
+        &nbsp;<asp:Label runat="server" ID="lblTimer" Style=" color: white;" Text="4.875"></asp:Label>
         <button type="button" id="button1" onclick="initialise()">Start</button>
 
         <script>
@@ -255,12 +254,12 @@
                     var mseconds = Math.floor((distance % (1000)));
 
 
-                    document.getElementById('demo').innerHTML = seconds + 's' + mseconds + 'ms';
-
+                    document.getElementById('lblTimer').innerHTML = seconds + '.' + mseconds;
+                    document.getElementById('txtTimer').innerHTML = seconds + '.' + mseconds;
 
                     if (distance < 0) {
                         clearInterval(x);
-                        document.getElementById("demo").innerHTML = "Time Up";
+                        document.getElementById("lblTimer").innerHTML = "Time Up";
                     }
                 }, 10);
                 if (distance = 10) {
@@ -271,6 +270,18 @@
             }
 
         </script>
+
+
+
+            
+
+
+
+        <asp:TextBox ID="txtTimer" runat="server"></asp:TextBox>
+
+
+
+            
 
 
 
