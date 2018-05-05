@@ -64,9 +64,10 @@ public partial class Default3 : System.Web.UI.Page
     int ListItem11 = 0;
     int ListItem12 = 0;
     decimal timeTaken2 = 0;
-
     int dividingNumber = 0;
     int ifSymbol = 0;
+
+
 
     SqlConnection con = new SqlConnection(@"Data Source=IESURFACEPRO2A\SQLEXPRESS;Initial Catalog=MaximGame;Integrated Security=True");
 
@@ -947,6 +948,9 @@ public partial class Default3 : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
+        var isNumeric = int.TryParse("123", out int n);
+      
+
         String strMode = Request.QueryString["mode"];
         String strNumber = Request.QueryString["number"];
         dividingNumber = Convert.ToInt32(strNumber);
@@ -977,6 +981,112 @@ public partial class Default3 : System.Web.UI.Page
         ListItem11 = Convert.ToInt32(lblNo11A.Text);
         ListItem12 = Convert.ToInt32(lblNo12A.Text);
 
+        //if (txtAns1.Text != isNumeric || txtAns2 != isNumeric || txtAns3 != isNumeric || txtAns4 != isNumeric || txtAns5 != isNumeric || txtAns6 != isNumeric || txtAns7 != isNumeric || txtAns8 != isNumeric || txtAns9 != isNumeric || txtAns10 != isNumeric || txtAns11 != isNumeric || txtAns12 != isNumeric )
+        //{
+        //    if (txtAns1 == isNumeric)
+        //    {
+        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //    }
+        //    if (txtAns2 == isNumeric)
+        //    {
+        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //    }
+        //    if (txtAns3 == isNumeric)
+        //    {
+        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //    }
+        //    if (txtAns4 == isNumeric)
+        //    {
+        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //    }
+        //    if (txtAns5 == isNumeric)
+        //    {
+        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //    }
+        //    if (txtAns6 == isNumeric)
+        //    {
+        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //    }
+        //    if (txtAns7 == isNumeric)
+        //    {
+        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //    }
+        //    if (txtAns8 == isNumeric)
+        //    {
+        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //    }
+        //    if (txtAns9 == isNumeric)
+        //    {
+        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //    }
+        //    if (txtAns10 == isNumeric)
+        //    {
+        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //    }
+        //    if (txtAns11 == isNumeric)
+        //    {
+        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //    }
+        //    if (txtAns12 == isNumeric)
+        //    {
+        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //    }
+        //}
+        //else
+        //{
+        //    if (txtAns1.Text == null || txtAns2.Text == null || txtAns3.Text == null || txtAns4.Text == null || txtAns5.Text == null || txtAns6.Text == null || txtAns7.Text == null || txtAns8.Text == null || txtAns9.Text == null || txtAns10.Text == null || txtAns11.Text == null || txtAns12.Text == null )
+        //    {
+        //        if (txtAns1.Text == null)
+        //        {
+        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //        }
+        //        if (txtAns2.Text == null)
+        //        {
+        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //        }
+        //        if (txtAns3.Text == null)
+        //        {
+        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //        }
+        //        if (txtAns4.Text == null)
+        //        {
+        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //        }
+        //        if (txtAns5.Text == null)
+        //        {
+        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //        }
+        //        if (txtAns6.Text == null)
+        //        {
+        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //        }
+        //        if (txtAns7.Text == null)
+        //        {
+        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //        }
+        //        if (txtAns8.Text == null)
+        //        {
+        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //        }
+        //        if (txtAns9.Text == null)
+        //        {
+        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //        }
+        //        if (txtAns10.Text == null)
+        //        {
+        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //        }
+        //        if (txtAns11.Text == null)
+        //        {
+        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //        }
+        //        if (txtAns12.Text == null)
+        //        {
+        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+        //        }
+        //    }
+        //    else
+        //    {
         if (strMode == "A")
         {
             if (answer1 == ListItem1 + dividingNumber)
@@ -1518,13 +1628,16 @@ public partial class Default3 : System.Web.UI.Page
                 imgAnswer12.ImageUrl = "/Image/IncorrectMascot.png";
             }
         }
+    //}
+    //}
 
-        timeTaken2 = Convert.ToDecimal(lblTimer.Text);
-        decimal test= Convert.ToDecimal(txtTimer.Text);
+
+    timeTaken2 = Convert.ToDecimal(lblTimer.Text);
+        
         con.Open();
         SqlCommand cmd = con.CreateCommand();
         cmd.CommandType = CommandType.Text;
-        cmd.CommandText = "insert into tablesScore2 ( UserID, TimeTaken, DateAndTime, Score, Operator, OperandNumber) values ('"+ User.Identity.GetUserId()+"', "+ test +", GETDATE(), "+ counter +", '"+strMode+"',"+strNumber+")";
+        cmd.CommandText = "insert into tablesScore2 ( UserID, TimeTaken, DateAndTime, Score, Operator, OperandNumber) values ('"+ User.Identity.GetUserId()+"', 4.875, GETDATE(), "+ counter +", '"+strMode+"',"+strNumber+")";
         cmd.ExecuteNonQuery();
         con.Close();
 

@@ -7,6 +7,22 @@
     <title>Tables</title>
 </head>
 <body>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="~/ClickerPage">ClickerPage</a></li>
+                    </ul>
+                    </div>
     <style>
         body {
             background-color: blue;
@@ -234,7 +250,7 @@
 
                 document.getElementById("button1").disabled = false;
 
-                var Timer = new Date(); Timer.setSeconds(Timer.getSeconds() + 10);
+                var Timer = new Date(); Timer.setSeconds(Timer.getSeconds() + 30);
 
 
 
@@ -258,11 +274,38 @@
                     document.getElementById('txtTimer').innerHTML = seconds + '.' + mseconds;
 
                     if (distance < 0) {
-                        clearInterval(x);
-                        document.getElementById("lblTimer").innerHTML = "Time Up";
+                    clearInterval(x);
+                    document.getElementById("lblTimer").innerHTML = "Time Up";
+                    document.getElementById("button1").disabled = false;
+                    document.getElementById("txtAns1").disabled = false;
+                    document.getElementById("txtAns2").disabled = false;
+                    document.getElementById("txtAns3").disabled = false;
+                    document.getElementById("txtAns4").disabled = false;
+                    document.getElementById("txtAns5").disabled = false;
+                    document.getElementById("txtAns6").disabled = false;
+                    document.getElementById("txtAns7").disabled = false;
+                    document.getElementById("txtAns8").disabled = false;
+                    document.getElementById("txtAns9").disabled = false;
+                    document.getElementById("txtAns10").disabled = false;
+                    document.getElementById("txtAns11").disabled = false;
+                    document.getElementById("txtAns12").disabled = false;
                     }
                 }, 10);
-                if (distance = 10) {
+                if (distance = 30) {
+                    document.getElementById("button1").disabled = true;
+                    document.getElementById("txtAns1").disabled = true;
+                    document.getElementById("txtAns2").disabled = true;
+                    document.getElementById("txtAns3").disabled = true;
+                    document.getElementById("txtAns4").disabled = true;
+                    document.getElementById("txtAns5").disabled = true;
+                    document.getElementById("txtAns6").disabled = true;
+                    document.getElementById("txtAns7").disabled = true;
+                    document.getElementById("txtAns8").disabled = true;
+                    document.getElementById("txtAns9").disabled = true;
+                    document.getElementById("txtAns10").disabled = true;
+                    document.getElementById("txtAns11").disabled = true;
+                    document.getElementById("txtAns12").disabled = true;
+
 
                 }
 

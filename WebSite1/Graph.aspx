@@ -12,9 +12,9 @@
     <form id="form1" runat="server">
         <div>
         </div>
-        <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" Height="425px" Width="436px">
+        <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource2" Height="425px" Width="436px" BorderlineWidth="30">
             <series>
-                <asp:Series ChartType="FastPoint" Name="Series1" XValueMember="DateAndTime" YValueMembers="Score" YValuesPerPoint="4">
+                <asp:Series ChartType="Line" Name="Series1" XValueMember="TablesScoreID" YValueMembers="Score" ToolTip="Value of X: #VALX Value of Y #VALY" YValuesPerPoint="4">
                 </asp:Series>
             </series>
             <chartareas>
@@ -22,6 +22,18 @@
                 </asp:ChartArea>
             </chartareas>
         </asp:Chart>
+                <asp:Chart ID="chtSalesPerDOW" runat="server" Width="1000px" Height="350px"> 
+   <Series> 
+      <asp:Series Palette="EarthTones" ChartArea="MainChartArea" ToolTip="You scored (#VALY/12) in #VALX " YValuesPerPoint="2"></asp:Series> 
+   </Series> 
+    
+   <ChartAreas> 
+      <asp:ChartArea Name="MainChartArea" Area3DStyle-Enable3D="true"> 
+<Area3DStyle Enable3D="True"></Area3DStyle>
+      </asp:ChartArea> 
+   </ChartAreas> 
+</asp:Chart>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:MaximGameConnectionString %>" SelectCommand="SELECT [Score], [TablesScoreID] FROM [tablesScore2]"></asp:SqlDataSource>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MaximGameConnectionString %>" SelectCommand="SELECT [Score], [DateAndTime] FROM [tablesScore2]"></asp:SqlDataSource>
     </form>
 </body>
