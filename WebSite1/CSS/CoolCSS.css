@@ -1,0 +1,44 @@
+﻿body {
+}
+
+label {
+    font-size:18px
+}
+
+nav ul li {
+    display: inline;
+    border-right: 2px solid #111111;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+    nav ul li:last-child {
+        border-right: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: lightgrey;
+        text-align: center;
+        font-size: 25px;
+    }
+
+nav ul {
+    list-style-type: none;
+    background-color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 16px;
+    position: fixed;
+    width: 1446px;
+    left: -12px;
+    top: -18px;
+    color: lightgrey;
+}
+
+td {
+    background-color: black;
+    color: lightgrey;
+    border: 2px solid black;
+    border-radius: 8px;
+}
