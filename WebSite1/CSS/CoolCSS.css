@@ -37,8 +37,9 @@ nav ul {
 }
 
 td {
-    background-color: black;
-    color: lightgrey;
-    border: 2px solid black;
-    border-radius: 8px;
+    color: grey;
+}
+
+img {
+    border: none;
 }

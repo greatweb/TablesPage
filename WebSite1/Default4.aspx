@@ -1,27 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="Site.master" CodeFile="TablesMenu4.aspx.cs" Inherits="Default5" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="Site.master" CodeFile="Default4.aspx.cs" Inherits="Default4" %>
+
+
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+<asp:PlaceHolder runat="server">
+        <link href="CSS/CoolCSS.css" rel="stylesheet" />
+    </asp:PlaceHolder>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Tables Menu</title>
-    <link href="CSS/CoolCSS.css" rel="stylesheet" />
-</head>
-<body>
-        <div>
-            <nav style="width: 468px">
-                <br />
-                <br />
-                <ul>
-                    <li><a href="ClickerPage.aspx">Home</a></li>
-                    <li><a href="TablesMenu4.aspx">Tables</a></li>
-                    <li><a href="Account/Login.aspx">Login</a></li>
-                </ul>
-                <br />
-            </nav>
-        </div>
 
         <br />
         <div class="RadioButtonClass">
@@ -33,13 +18,6 @@
         </asp:RadioButtonList>
         </div>
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
 
         <asp:Button ID="btn1TimesTables" runat="server" Height="100px" Text=" + 1 Tables" Width="200px" OnClick="btn1TimesTables_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -72,6 +50,5 @@
         &nbsp;&nbsp;
         <br />
         &nbsp;<asp:Button ID="Button13" runat="server" Text="Results" />
-</body>
-</html>
-</asp:Content>
+
+    </asp:Content>
