@@ -1,30 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ClickerPage.aspx.cs" Inherits="ClickerPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="Site.master" CodeFile="ClickerPage.aspx.cs" Inherits="ClickerPage" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Clicker</title>
-    <link rel="shortcut icon" href="hand.png" />
+<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+        <asp:PlaceHolder runat="server">
     <link href="CSS/StyleSheet1.css" rel="stylesheet" />
-</head>
+            </asp:PlaceHolder>
 
-<body>
-    <form id="form1" runat="server">
-        <div class="square"></div>
-    <div>
-        <nav>
-            <ul>
-                <li><a href="ClickerPage.aspx">Home</a></li>
-                <li><a href="TablesMenu4.aspx">Tables</a></li>
-                <li><a href="Account/Login.aspx">Login</a></li>
-            </ul>
-            <br />
-            <br />
-            <br />
-        </nav>
-    </div>
 <div class="loginDiv">
                 &nbsp;</div>
     <div id="div1">
@@ -37,11 +18,8 @@
         
              &nbsp;<asp:Button ID="Button1" runat="server"   style="margin-left: 15px" Text="Submit Your Score" Width="167px" OnClick="Button1_Click" />
 
-                <asp:Label ID="MaximTestLabel" runat="server" Text="lblLoginName"></asp:Label>
-                <asp:Label ID="lblValue" runat="server" Text="lblLoginUserValue"></asp:Label>
 </div>
         <input onclick="window.location.href='leaderboard.aspx'" style="height: 41px; width: 217px; margin-top: 0px;" type="button" value="Leaderboard" /><asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MaximGameConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Leaderboard]"></asp:SqlDataSource>
-        
 
          
     <h3>Your Score Is</h3>
@@ -192,8 +170,6 @@
     height: 140px;
     
 }</style>
-    </form>
     <p>
         &nbsp;</p>
-</body>
-</html>
+</asp:Content>

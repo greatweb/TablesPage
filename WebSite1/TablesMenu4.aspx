@@ -2,14 +2,10 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
-<!DOCTYPE html>
+    <asp:PlaceHolder runat="server">
+        <link href="CSS/CoolCSS.css" rel="stylesheet" />
+        </asp:PlaceHolder>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Tables Menu</title>
-    <link href="CSS/CoolCSS.css" rel="stylesheet" />
-</head>
-<body>
         <div>
             <nav style="width: 468px">
                 <br />
@@ -71,7 +67,5 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
         &nbsp;&nbsp;
         <br />
-        &nbsp;<asp:Button ID="Button13" runat="server" Text="Results" />
-</body>
-</html>
+        &nbsp;<asp:Button ID="Button13" runat="server" Text="Results" OnClick="Button13_Click" />
 </asp:Content>

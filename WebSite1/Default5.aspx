@@ -120,7 +120,7 @@
                 <td>
                     <asp:Label ID="lblNo8B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns8" runat="server" /></td>
+                    <asp:TextBox ID="txtAns8" runat="server" OnTextChanged="txtAns8_TextChanged" /></td>
                 <td>
                     <asp:Image ID="imgAnswer8" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label8" Visible="false" runat="server" Text=""></asp:Label>

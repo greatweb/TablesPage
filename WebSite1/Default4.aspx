@@ -3,7 +3,7 @@
 
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-<asp:PlaceHolder runat="server">
+    <asp:PlaceHolder runat="server">
         <link href="CSS/CoolCSS.css" rel="stylesheet" />
     </asp:PlaceHolder>
 
@@ -11,10 +11,10 @@
         <br />
         <div class="RadioButtonClass">
         <asp:RadioButtonList ID="rbTables" runat="server" Height="50px" Width="863px" Style="font-size: xx-small;" Font-Size="XX-Large" EnableTheming="True" AutoPostBack="True" OnSelectedIndexChanged="RadioButtonList3_SelectedIndexChanged" RepeatDirection="Horizontal">
-            <asp:ListItem Value="A" Selected="True">Addition</asp:ListItem>
-            <asp:ListItem Value="S">Subtraction</asp:ListItem>
-            <asp:ListItem Value="M">Multiplication</asp:ListItem>
-            <asp:ListItem Value="D">Division</asp:ListItem>
+            <asp:ListItem Value="A" Selected="True"> Addition</asp:ListItem>
+            <asp:ListItem Value="S"> Subtraction</asp:ListItem>
+            <asp:ListItem Value="M"> Multiplication</asp:ListItem>
+            <asp:ListItem Value="D"> Division</asp:ListItem>
         </asp:RadioButtonList>
         </div>
 
@@ -49,6 +49,6 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
         &nbsp;&nbsp;
         <br />
-        &nbsp;<asp:Button ID="Button13" runat="server" Text="Results" />
+        &nbsp;<asp:Button ID="Button13" runat="server" Text="Results" OnClick="Button13_Click" />
 
     </asp:Content>

@@ -87,7 +87,7 @@ public partial class Default5 : System.Web.UI.Page
         string operation = "";
         operation = rbTables.SelectedValue;
 
-        Response.Redirect("default3.aspx?mode="+ operation + "&number=2");
+        Response.Redirect("Default5.aspx?mode="+ operation + "&number=2");
     }
 
     protected void btn1TimesTables_Click(object sender, EventArgs e)
@@ -95,7 +95,7 @@ public partial class Default5 : System.Web.UI.Page
         string operation = "";
         operation = rbTables.SelectedValue;
 
-        Response.Redirect("default3.aspx?mode=" + operation + "&number=1");
+        Response.Redirect("Default5.aspx?mode=" + operation + "&number=1");
     }
 
     protected void btn3TimesTables_Click(object sender, EventArgs e)
@@ -103,7 +103,7 @@ public partial class Default5 : System.Web.UI.Page
         string operation = "";
         operation = rbTables.SelectedValue;
 
-        Response.Redirect("default3.aspx?mode=" + operation + "&number=3");
+        Response.Redirect("Default5.aspx?mode=" + operation + "&number=3");
     }
 
     protected void btn4TimesTables_Click(object sender, EventArgs e)
@@ -111,7 +111,7 @@ public partial class Default5 : System.Web.UI.Page
         string operation = "";
         operation = rbTables.SelectedValue;
 
-        Response.Redirect("default3.aspx?mode=" + operation + "&number=4");
+        Response.Redirect("Default5.aspx?mode=" + operation + "&number=4");
     }
 
     protected void btn5TimesTables_Click(object sender, EventArgs e)
@@ -119,7 +119,7 @@ public partial class Default5 : System.Web.UI.Page
         string operation = "";
         operation = rbTables.SelectedValue;
 
-        Response.Redirect("default3.aspx?mode=" + operation + "&number=5");
+        Response.Redirect("Default5.aspx?mode=" + operation + "&number=5");
     }
 
     protected void btn6TimesTables_Click(object sender, EventArgs e)
@@ -127,7 +127,7 @@ public partial class Default5 : System.Web.UI.Page
         string operation = "";
         operation = rbTables.SelectedValue;
 
-        Response.Redirect("default3.aspx?mode=" + operation + "&number=6");
+        Response.Redirect("Default5.aspx?mode=" + operation + "&number=6");
     }
 
     protected void btn7TimesTables_Click(object sender, EventArgs e)
@@ -135,7 +135,7 @@ public partial class Default5 : System.Web.UI.Page
         string operation = "";
         operation = rbTables.SelectedValue;
 
-        Response.Redirect("default3.aspx?mode=" + operation + "&number=7");
+        Response.Redirect("Default5.aspx?mode=" + operation + "&number=7");
     }
 
     protected void btn8TimesTables_Click(object sender, EventArgs e)
@@ -143,7 +143,7 @@ public partial class Default5 : System.Web.UI.Page
         string operation = "";
         operation = rbTables.SelectedValue;
 
-        Response.Redirect("default3.aspx?mode=" + operation + "&number=8");
+        Response.Redirect("Default5.aspx?mode=" + operation + "&number=8");
     }
 
     protected void btn9TimesTables_Click(object sender, EventArgs e)
@@ -151,7 +151,7 @@ public partial class Default5 : System.Web.UI.Page
         string operation = "";
         operation = rbTables.SelectedValue;
 
-        Response.Redirect("default3.aspx?mode=" + operation + "&number=9");
+        Response.Redirect("Default5.aspx?mode=" + operation + "&number=9");
     }
 
     protected void btn10TimesTables_Click(object sender, EventArgs e)
@@ -159,7 +159,7 @@ public partial class Default5 : System.Web.UI.Page
         string operation = "";
         operation = rbTables.SelectedValue;
 
-        Response.Redirect("default3.aspx?mode=" + operation + "&number=10");
+        Response.Redirect("Default5.aspx?mode=" + operation + "&number=10");
     }
 
     protected void btn11TimesTables_Click(object sender, EventArgs e)
@@ -167,7 +167,7 @@ public partial class Default5 : System.Web.UI.Page
         string operation = "";
         operation = rbTables.SelectedValue;
 
-        Response.Redirect("default3.aspx?mode=" + operation + "&number=11");
+        Response.Redirect("Default5.aspx?mode=" + operation + "&number=11");
     }
 
     protected void btn12TimesTables_Click(object sender, EventArgs e)
@@ -175,6 +175,11 @@ public partial class Default5 : System.Web.UI.Page
         string operation = "";
         operation = rbTables.SelectedValue;
 
-        Response.Redirect("default3.aspx?mode=" + operation + "&number=12");
+        Response.Redirect("Default5.aspx?mode=" + operation + "&number=12");
+    }
+
+    protected void Button13_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Graph.aspx");
     }
 }

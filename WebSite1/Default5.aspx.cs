@@ -99,6 +99,19 @@ public partial class Default5 : System.Web.UI.Page
         if (!IsPostBack)
         {
             imgAnswer1.Visible = false;
+            imgAnswer2.Visible = false;
+            imgAnswer3.Visible = false;
+            imgAnswer4.Visible = false;
+            imgAnswer5.Visible = false;
+            imgAnswer6.Visible = false;
+            imgAnswer7.Visible = false;
+            imgAnswer8.Visible = false;
+            imgAnswer9.Visible = false;
+            imgAnswer10.Visible = false;
+            imgAnswer11.Visible = false;
+            imgAnswer12.Visible = false;
+            GoldMedal.Visible = false;
+            SilverMedal.Visible = false;
 
             while (randomList.Count < 12)
             {
@@ -387,6 +400,22 @@ public partial class Default5 : System.Web.UI.Page
                 //Label1x12.Text = strNumber + " ×  12 =";
             }
 
+        }
+
+        if(IsPostBack)
+        {
+            imgAnswer1.Visible = true;
+            imgAnswer2.Visible = true;
+            imgAnswer3.Visible = true;
+            imgAnswer4.Visible = true;
+            imgAnswer5.Visible = true;
+            imgAnswer6.Visible = true;
+            imgAnswer7.Visible = true;
+            imgAnswer8.Visible = true;
+            imgAnswer9.Visible = true;
+            imgAnswer10.Visible = true;
+            imgAnswer11.Visible = true;
+            imgAnswer12.Visible = true;
         }
 
         //void Multiply()
@@ -1645,10 +1674,21 @@ public partial class Default5 : System.Web.UI.Page
         con.Close();
 
         if (counter == 12)
-        { GoldMedal.ImageUrl = "/Image/CDPicture.png"; }
+        {
+            GoldMedal.Visible = true;
+            GoldMedal.ImageUrl = "/Image/CDPicture.png";
+        }
         if (counter == 11)
-        { SilverMedal.ImageUrl = "/Image/SilverStar.png"; }
+        {
+            SilverMedal.Visible = true;
+            SilverMedal.ImageUrl = "/Image/SilverStar.png";
+        }
 
+
+    }
+
+    protected void txtAns8_TextChanged(object sender, EventArgs e)
+    {
 
     }
 }
