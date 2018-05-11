@@ -43,3 +43,8 @@ td {
 img {
     border: none;
 }
+
+.InfoClass {
+    position: center;
+    font-size: 30px;
+}

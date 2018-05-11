@@ -14,7 +14,7 @@
                 <td>
                     <asp:Label ID="lblNo1B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns1" runat="server" /></td>
+                    <asp:TextBox ID="txtAns1" runat="server" autocomplete="false" /></td>
                 <td>
                     <asp:Image ID="imgAnswer1" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label1" Visible="false" runat="server" Text=""></asp:Label>
@@ -28,7 +28,7 @@
                 <td>
                     <asp:Label ID="lblNo2B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns2" runat="server" /></td>
+                    <asp:TextBox ID="txtAns2" runat="server" autocomplete="false" /></td>
                 <td>
                     <asp:Image ID="imgAnswer2" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label2" Visible="false" runat="server" Text=""></asp:Label>
@@ -43,7 +43,7 @@
                 <td>
                     <asp:Label ID="lblNo3B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns3" runat="server" /></td>
+                    <asp:TextBox ID="txtAns3" runat="server" autocomplete="false" /></td>
                 <td>
                     <asp:Image ID="imgAnswer3" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label3" Visible="false" runat="server" Text=""></asp:Label>
@@ -58,7 +58,7 @@
                 <td>
                     <asp:Label ID="lblNo4B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns4" runat="server" /></td>
+                    <asp:TextBox ID="txtAns4" runat="server" autocomplete="false" /></td>
                 <td>
                     <asp:Image ID="imgAnswer4" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label4" Visible="false" runat="server" Text=""></asp:Label>
@@ -78,7 +78,7 @@
                 <td>
                     <asp:Label ID="lblNo5B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns5" runat="server" /></td>
+                    <asp:TextBox ID="txtAns5" runat="server" autocomplete="false" /></td>
                 <td>
                     <asp:Image ID="imgAnswer5" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label5" Visible="false" runat="server" Text=""></asp:Label>
@@ -92,7 +92,7 @@
                 <td>
                     <asp:Label ID="lblNo6B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns6" runat="server" /></td>
+                    <asp:TextBox ID="txtAns6" runat="server" autocomplete="false" /></td>
                 <td>
                     <asp:Image ID="imgAnswer6" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label6" Visible="false" runat="server" Text=""></asp:Label>
@@ -106,7 +106,7 @@
                 <td>
                     <asp:Label ID="lblNo7B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns7" runat="server" /></td>
+                    <asp:TextBox ID="txtAns7" runat="server" autocomplete="false" /></td>
                 <td>
                     <asp:Image ID="imgAnswer7" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label7" Visible="false" runat="server" Text=""></asp:Label>
@@ -120,7 +120,7 @@
                 <td>
                     <asp:Label ID="lblNo8B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns8" runat="server" OnTextChanged="txtAns8_TextChanged" /></td>
+                    <asp:TextBox ID="txtAns8" runat="server" autocomplete="false" OnTextChanged="txtAns8_TextChanged" /></td>
                 <td>
                     <asp:Image ID="imgAnswer8" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label8" Visible="false" runat="server" Text=""></asp:Label>
@@ -139,7 +139,7 @@
                 <td>
                     <asp:Label ID="lblNo9B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns9" runat="server" /></td>
+                    <asp:TextBox ID="txtAns9" runat="server" autocomplete="false" /></td>
                 <td>
                     <asp:Image ID="imgAnswer9" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label9" Visible="false" runat="server" Text=""></asp:Label>
@@ -153,7 +153,7 @@
                 <td>
                     <asp:Label ID="lblNo10B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns10" runat="server" /></td>
+                    <asp:TextBox ID="txtAns10" runat="server" autocomplete="false" /></td>
                 <td>
                     <asp:Image ID="imgAnswer10" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label10" Visible="false" runat="server" Text=""></asp:Label>
@@ -167,7 +167,7 @@
                 <td>
                     <asp:Label ID="lblNo11B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns11" runat="server" /></td>
+                    <asp:TextBox ID="txtAns11" runat="server" autocomplete="false" /></td>
                 <td>
                     <asp:Image ID="imgAnswer11" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label11" Visible="false" runat="server" Text=""></asp:Label>
@@ -181,7 +181,7 @@
                 <td>
                     <asp:Label ID="lblNo12B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns12" runat="server" /></td>
+                    <asp:TextBox ID="txtAns12" runat="server" autocomplete="false" /></td>
                 <td>
                     <asp:Image ID="imgAnswer12" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label12" Visible="false" runat="server" Text=""></asp:Label>

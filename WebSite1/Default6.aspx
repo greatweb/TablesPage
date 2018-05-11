@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="Site.master" CodeFile="TablesMenu4.aspx.cs" Inherits="Default5" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="Site.master" CodeFile="Default6.aspx.cs" Inherits="Default6" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
@@ -6,17 +6,16 @@
         <link href="CSS/CoolCSS.css" rel="stylesheet" />
         </asp:PlaceHolder>
 
-
-
         <br />
         <div class="RadioButtonClass">
-        <asp:RadioButtonList ID="rbTables" runat="server" Height="50px" Width="863px" Style="font-size: xx-small;" Font-Size="XX-Large" EnableTheming="True" AutoPostBack="True" OnSelectedIndexChanged="RadioButtonList3_SelectedIndexChanged" RepeatDirection="Horizontal">
+        <asp:RadioButtonList ID="rbTables" runat="server" Height="36px" Width="863px" Style="font-size: xx-small;" Font-Size="XX-Large" EnableTheming="True" AutoPostBack="True" OnSelectedIndexChanged="RadioButtonList3_SelectedIndexChanged" RepeatDirection="Horizontal">
             <asp:ListItem Value="A" Selected="True">Addition</asp:ListItem>
             <asp:ListItem Value="S">Subtraction</asp:ListItem>
             <asp:ListItem Value="M">Multiplication</asp:ListItem>
             <asp:ListItem Value="D">Division</asp:ListItem>
         </asp:RadioButtonList>
         </div>
+
         <asp:Button ID="btn1TimesTables" runat="server" Height="100px" Text=" + 1 Tables" Width="200px" OnClick="btn1TimesTables_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btn2TimesTables" runat="server" Height="100px" Text="+ 2 Tables" Width="200px" OnClick="btn2TimesTables_Click" />
@@ -47,5 +46,5 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
         &nbsp;&nbsp;
         <br />
-        &nbsp;<asp:Button ID="Button13" runat="server" Text="Results" OnClick="Button13_Click" />
+        &nbsp;
 </asp:Content>

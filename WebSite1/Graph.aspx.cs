@@ -14,7 +14,25 @@ public partial class Default4 : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-  
+        String strMode = Request.QueryString["mode"];
+        String strNumber = Request.QueryString["number"];
+
+        if (strMode == "M")
+            {
+                Info.Text = strNumber + " × Tables";
+            }
+            if (strMode == "A")
+            {
+                Info.Text = strNumber + "+ Tables";
+            }
+            if (strMode == "S")
+            {
+                Info.Text = strNumber + " - Tables";
+            }
+            if (strMode == "D")
+            {
+                Info.Text = strNumber + " ÷ Tables";
+            }
     }
 
     protected void ScoreAndSession_Load(object sender, EventArgs e)
@@ -25,13 +43,22 @@ public partial class Default4 : System.Web.UI.Page
         //cmd.CommandText = "select top 5 * from tablesScore2 order by DateAndTime desc";
         //cmd.ExecuteNonQuery();
         //con.Close();
+        String strMode = Request.QueryString["mode"];
+        String strNumber = Request.QueryString["number"];
 
+        if (strMode == null)
+        {
+            strMode = "M";
+            strNumber = "1";
+        }
+
+        string UserId = User.Identity.GetUserId();
 
         con.Open();
         SqlCommand cmd = con.CreateCommand();
         cmd.CommandType = CommandType.Text;
-        cmd.CommandText = "select top 5 * from tablesScore2 order by DateAndTime desc";
         List<string> Scores = new List<string>();
+        cmd.CommandText = "select top 5 * from tablesScore2 where Operator = '" + strMode + "' and OperandNumber = '" + strNumber + "' and UserID = '"+ UserId +"' order by DateAndTime desc";
 
 
         using (SqlDataReader reader = cmd.ExecuteReader())
@@ -45,22 +72,48 @@ public partial class Default4 : System.Web.UI.Page
                 //Console.WriteLine(reader["Complete"].ToString());
             }
         }
-
-        Convert.ToInt32(Scores[0]);
-        Convert.ToInt32(Scores[1]);
-        Convert.ToInt32(Scores[2]);
-        Convert.ToInt32(Scores[3]);
-        Convert.ToInt32(Scores[4]);
+        con.Close();
+        if (Scores.Count > 0) { Convert.ToDecimal(Scores[0]); } else { Scores.Add("0"); }
+        if (Scores.Count > 1) { Convert.ToDecimal(Scores[1]); } else { Scores.Add("0"); }
+        if (Scores.Count > 2) { Convert.ToDecimal(Scores[2]); } else { Scores.Add("0"); }
+        if (Scores.Count > 3) { Convert.ToDecimal(Scores[3]); } else { Scores.Add("0"); }
+        if (Scores.Count > 4) { Convert.ToDecimal(Scores[4]); } else { Scores.Add("0"); }
+        //    {
+        //    if (Scores[0] != null) { Convert.ToDecimal(Scores[0]); } else { Scores[0] = "0"; }
+        //    if (Scores[1] != null) { Convert.ToDecimal(Scores[1]); } else { Scores[1] = "0"; }
+        //    if (Scores[2] != null) { Convert.ToDecimal(Scores[2]); } else { Scores[2] = "0"; }
+        //    if (Scores[3] != null) { Convert.ToDecimal(Scores[3]); } else { Scores[3] = "0"; }
+        //}
 
         int scoreCounter = 0;
+
+        ScoreAndSession.ChartAreas[0].AxisY.Minimum = -0.00000000000000001;
+        ScoreAndSession.ChartAreas[0].AxisY.Maximum = 12;
 
         string[] Sessions = { "Session 1", "Session 2", "Session 3", "Session 4", "Session 5" };
         foreach (string DOW in Sessions)
         {
+
             //Decimal totalSalesForDOW = Scores.Next(1, 5);
-            int testScore = Convert.ToInt32(Scores[scoreCounter]);
+            decimal testScore = Convert.ToDecimal(Scores[scoreCounter]);
+
+            //if ()
+            //{
+
+            //}
+            if (testScore == 0)
+            {
+                testScore = 0.0001M;  
+            }
             ScoreAndSession.Series[0].Points.AddXY(DOW, testScore);
+            if (testScore == 0.0001M)
+            {
+                ScoreAndSession.Series[0].Points[ScoreAndSession.Series[0].Points.Count - 1].ToolTip = "You scored (0/12) in #VALX ";
+            }
             scoreCounter = scoreCounter + 1;
+
         }
+        
     }
+    
 }

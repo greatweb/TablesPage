@@ -979,25 +979,36 @@ public partial class Default5 : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        var isNumeric = int.TryParse("123", out int n);
+        var isNumeric1 = int.TryParse(txtAns1.Text, out int answer1);
+        var isNumeric2 = int.TryParse(txtAns2.Text, out int answer2);
+        var isNumeric3 = int.TryParse(txtAns3.Text, out int answer3);
+        var isNumeric4 = int.TryParse(txtAns4.Text, out int answer4);
+        var isNumeric5 = int.TryParse(txtAns5.Text, out int answer5);
+        var isNumeric6 = int.TryParse(txtAns6.Text, out int answer6);
+        var isNumeric7 = int.TryParse(txtAns7.Text, out int answer7);
+        var isNumeric8 = int.TryParse(txtAns8.Text, out int answer8);
+        var isNumeric9 = int.TryParse(txtAns9.Text, out int answer9);
+        var isNumeric10 = int.TryParse(txtAns10.Text, out int answer10);
+        var isNumeric11 = int.TryParse(txtAns11.Text, out int answer11);
+        var isNumeric12 = int.TryParse(txtAns12.Text, out int answer12);
 
 
         String strMode = Request.QueryString["mode"];
         String strNumber = Request.QueryString["number"];
         dividingNumber = Convert.ToInt32(strNumber);
 
-        answer1 = Convert.ToInt32(txtAns1.Text);
-        answer2 = Convert.ToInt32(txtAns2.Text);
-        answer3 = Convert.ToInt32(txtAns3.Text);
-        answer4 = Convert.ToInt32(txtAns4.Text);
-        answer5 = Convert.ToInt32(txtAns5.Text);
-        answer6 = Convert.ToInt32(txtAns6.Text);
-        answer7 = Convert.ToInt32(txtAns7.Text);
-        answer8 = Convert.ToInt32(txtAns8.Text);
-        answer9 = Convert.ToInt32(txtAns9.Text);
-        answer10 = Convert.ToInt32(txtAns10.Text);
-        answer11 = Convert.ToInt32(txtAns11.Text);
-        answer12 = Convert.ToInt32(txtAns12.Text);
+        //answer1 = Convert.ToInt32(txtAns1.Text);
+        //answer2 = Convert.ToInt32(txtAns2.Text);
+        //answer3 = Convert.ToInt32(txtAns3.Text);
+        //answer4 = Convert.ToInt32(txtAns4.Text);
+        //answer5 = Convert.ToInt32(txtAns5.Text);
+        //answer6 = Convert.ToInt32(txtAns6.Text);
+        //answer7 = Convert.ToInt32(txtAns7.Text);
+        //answer8 = Convert.ToInt32(txtAns8.Text);
+        //answer9 = Convert.ToInt32(txtAns9.Text);
+        //answer10 = Convert.ToInt32(txtAns10.Text);
+        //answer11 = Convert.ToInt32(txtAns11.Text);
+        //answer12 = Convert.ToInt32(txtAns12.Text);
 
         ListItem1 = Convert.ToInt32(lblNo1A.Text);
         ListItem2 = Convert.ToInt32(lblNo2A.Text);
@@ -1011,660 +1022,662 @@ public partial class Default5 : System.Web.UI.Page
         ListItem10 = Convert.ToInt32(lblNo10A.Text);
         ListItem11 = Convert.ToInt32(lblNo11A.Text);
         ListItem12 = Convert.ToInt32(lblNo12A.Text);
+        { 
+        if (txtAns1.Text == null || txtAns2.Text == null || txtAns3.Text == null || txtAns4.Text == null || txtAns5.Text == null || txtAns6.Text == null || txtAns7.Text == null || txtAns8.Text == null || txtAns9.Text == null || txtAns10.Text == null || txtAns11.Text == null || txtAns12.Text == null)
+        {
+            if (txtAns1.Text == null)
+            {
+                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+            }
+            if (txtAns2.Text == null)
+            {
+                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+            }
+            if (txtAns3.Text == null)
+            {
+                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+            }
+            if (txtAns4.Text == null)
+            {
+                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+            }
+            if (txtAns5.Text == null)
+            {
+                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+            }
+            if (txtAns6.Text == null)
+            {
+                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+            }
+            if (txtAns7.Text == null)
+            {
+                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+            }
+            if (txtAns8.Text == null)
+            {
+                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+            }
+            if (txtAns9.Text == null)
+            {
+                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+            }
+            if (txtAns10.Text == null)
+            {
+                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+            }
+            if (txtAns11.Text == null)
+            {
+                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+            }
+            if (txtAns12.Text == null)
+            {
+                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+            }
+            else
+            {
+                if (isNumeric1 == false || isNumeric2 == false || isNumeric3 == false || isNumeric4 == false || isNumeric5 == false || isNumeric6 == false || isNumeric7 == false || isNumeric8 == false || isNumeric9 == false || isNumeric10 == false || isNumeric11 == false || isNumeric12 == false)
+                {
+                    if (isNumeric1 == false)
+                    {
+                        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                    }
+                    if (isNumeric2 == false)
+                    {
+                        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                    }
+                    if (isNumeric3 == false)
+                    {
+                        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                    }
+                    if (isNumeric4 == false)
+                    {
+                        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                    }
+                    if (isNumeric5 == false)
+                    {
+                        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                    }
+                    if (isNumeric6 == false)
+                    {
+                        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                    }
+                    if (isNumeric7 == false)
+                    {
+                        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                    }
+                    if (isNumeric8 == false)
+                    {
+                        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                    }
+                    if (isNumeric9 == false)
+                    {
+                        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                    }
+                    if (isNumeric10 == false)
+                    {
+                        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                    }
+                    if (isNumeric11 == false)
+                    {
+                        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                    }
+                    if (isNumeric12 == false)
+                    {
+                        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                    }
+                }
+            }
+        }
 
-        //if (txtAns1.Text != isNumeric || txtAns2 != isNumeric || txtAns3 != isNumeric || txtAns4 != isNumeric || txtAns5 != isNumeric || txtAns6 != isNumeric || txtAns7 != isNumeric || txtAns8 != isNumeric || txtAns9 != isNumeric || txtAns10 != isNumeric || txtAns11 != isNumeric || txtAns12 != isNumeric )
-        //{
-        //    if (txtAns1 == isNumeric)
-        //    {
-        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //    }
-        //    if (txtAns2 == isNumeric)
-        //    {
-        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //    }
-        //    if (txtAns3 == isNumeric)
-        //    {
-        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //    }
-        //    if (txtAns4 == isNumeric)
-        //    {
-        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //    }
-        //    if (txtAns5 == isNumeric)
-        //    {
-        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //    }
-        //    if (txtAns6 == isNumeric)
-        //    {
-        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //    }
-        //    if (txtAns7 == isNumeric)
-        //    {
-        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //    }
-        //    if (txtAns8 == isNumeric)
-        //    {
-        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //    }
-        //    if (txtAns9 == isNumeric)
-        //    {
-        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //    }
-        //    if (txtAns10 == isNumeric)
-        //    {
-        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //    }
-        //    if (txtAns11 == isNumeric)
-        //    {
-        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //    }
-        //    if (txtAns12 == isNumeric)
-        //    {
-        //        imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //    }
-        //}
-        //else
-        //{
-        //    if (txtAns1.Text == null || txtAns2.Text == null || txtAns3.Text == null || txtAns4.Text == null || txtAns5.Text == null || txtAns6.Text == null || txtAns7.Text == null || txtAns8.Text == null || txtAns9.Text == null || txtAns10.Text == null || txtAns11.Text == null || txtAns12.Text == null )
-        //    {
-        //        if (txtAns1.Text == null)
-        //        {
-        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //        }
-        //        if (txtAns2.Text == null)
-        //        {
-        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //        }
-        //        if (txtAns3.Text == null)
-        //        {
-        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //        }
-        //        if (txtAns4.Text == null)
-        //        {
-        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //        }
-        //        if (txtAns5.Text == null)
-        //        {
-        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //        }
-        //        if (txtAns6.Text == null)
-        //        {
-        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //        }
-        //        if (txtAns7.Text == null)
-        //        {
-        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //        }
-        //        if (txtAns8.Text == null)
-        //        {
-        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //        }
-        //        if (txtAns9.Text == null)
-        //        {
-        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //        }
-        //        if (txtAns10.Text == null)
-        //        {
-        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //        }
-        //        if (txtAns11.Text == null)
-        //        {
-        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //        }
-        //        if (txtAns12.Text == null)
-        //        {
-        //            imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-        //        }
-        //    }
-        //    else
-        //    {
-        if (strMode == "A")
+        else
         {
-            if (answer1 == ListItem1 + dividingNumber)
+            if (strMode == "A")
             {
-                imgAnswer1.Visible = true;
-                Label1.Text = "Correct";
-                imgAnswer1.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
+                if (answer1 == ListItem1 + dividingNumber)
+                {
+                    imgAnswer1.Visible = true;
+                    Label1.Text = "Correct";
+                    imgAnswer1.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label1.Text = "Incorrect";
+                    imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer2 == ListItem2 + dividingNumber)
+                {
+                    Label2.Text = "Correct";
+                    imgAnswer2.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label2.Text = "Incorrect";
+                    imgAnswer2.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer3 == ListItem3 + dividingNumber)
+                {
+                    Label3.Text = "Correct";
+                    imgAnswer3.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label3.Text = "Incorrect";
+                    imgAnswer3.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer4 == ListItem4 + dividingNumber)
+                {
+                    Label4.Text = "Correct";
+                    imgAnswer4.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label4.Text = "Incorrect";
+                    imgAnswer4.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer5 == ListItem5 + dividingNumber)
+                {
+                    Label5.Text = "Correct";
+                    imgAnswer5.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label5.Text = "Incorrect";
+                    imgAnswer5.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer6 == ListItem6 + dividingNumber)
+                {
+                    Label6.Text = "Correct";
+                    imgAnswer6.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label6.Text = "Incorrect";
+                    imgAnswer6.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer7 == ListItem7 + dividingNumber)
+                {
+                    Label7.Text = "Correct";
+                    imgAnswer7.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label7.Text = "Incorrect";
+                    imgAnswer7.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer8 == ListItem8 + dividingNumber)
+                {
+                    Label8.Text = "Correct";
+                    imgAnswer8.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label8.Text = "Incorrect";
+                    imgAnswer8.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer9 == ListItem9 + dividingNumber)
+                {
+                    Label9.Text = "Correct";
+                    imgAnswer9.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label9.Text = "Incorrect";
+                    imgAnswer9.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer10 == ListItem10 + dividingNumber)
+                {
+                    Label10.Text = "Correct";
+                    imgAnswer10.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label10.Text = "Incorrect";
+                    imgAnswer10.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer11 == ListItem11 + dividingNumber)
+                {
+                    Label11.Text = "Correct";
+                    imgAnswer11.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label11.Text = "Incorrect";
+                    imgAnswer11.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer12 == ListItem12 + dividingNumber)
+                {
+                    Label12.Text = "Correct";
+                    imgAnswer12.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label12.Text = "Incorrect";
+                    imgAnswer12.ImageUrl = "/Image/IncorrectMascot.png";
+                }
             }
-            else
+            if (strMode == "S")
             {
-                Label1.Text = "Incorrect";
-                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                if (answer1 == ListItem1 - dividingNumber)
+                {
+                    Label1.Text = "Correct";
+                    imgAnswer1.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label1.Text = "Incorrect";
+                    imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer2 == ListItem2 - dividingNumber)
+                {
+                    Label2.Text = "Correct";
+                    imgAnswer2.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label2.Text = "Incorrect";
+                    imgAnswer2.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer3 == ListItem3 - dividingNumber)
+                {
+                    Label3.Text = "Correct";
+                    imgAnswer3.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label3.Text = "Incorrect";
+                    imgAnswer3.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer4 == ListItem4 - dividingNumber)
+                {
+                    Label4.Text = "Correct";
+                    imgAnswer4.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label4.Text = "Incorrect";
+                    imgAnswer4.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer5 == ListItem5 - dividingNumber)
+                {
+                    Label5.Text = "Correct";
+                    imgAnswer5.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label5.Text = "Incorrect";
+                    imgAnswer5.ImageUrl = "/Image/IncorrectMascot.png";
+                    counter = counter + 1;
+                }
+                if (answer6 == ListItem6 - dividingNumber)
+                {
+                    Label6.Text = "Correct";
+                    imgAnswer6.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label6.Text = "Incorrect";
+                    imgAnswer6.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer7 == ListItem7 - dividingNumber)
+                {
+                    Label7.Text = "Correct";
+                    imgAnswer7.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label7.Text = "Incorrect";
+                    imgAnswer7.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer8 == ListItem8 - dividingNumber)
+                {
+                    Label8.Text = "Correct";
+                    imgAnswer8.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label8.Text = "Incorrect";
+                    imgAnswer8.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer9 == ListItem9 - dividingNumber)
+                {
+                    Label9.Text = "Correct";
+                    imgAnswer9.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label9.Text = "Incorrect";
+                    imgAnswer9.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer10 == ListItem10 - dividingNumber)
+                {
+                    Label10.Text = "Correct";
+                    imgAnswer10.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label10.Text = "Incorrect";
+                    imgAnswer10.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer11 == ListItem11 - dividingNumber)
+                {
+                    Label11.Text = "Correct";
+                    imgAnswer11.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label11.Text = "Incorrect";
+                    imgAnswer11.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer12 == ListItem12 - dividingNumber)
+                {
+                    Label12.Text = "Correct";
+                    imgAnswer12.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label12.Text = "Incorrect";
+                    imgAnswer12.ImageUrl = "/Image/IncorrectMascot.png";
+                }
             }
-            if (answer2 == ListItem2 + dividingNumber)
+            if (strMode == "M")
             {
-                Label2.Text = "Correct";
-                imgAnswer2.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
+                if (answer1 == ListItem1 * dividingNumber)
+                {
+                    Label1.Text = "Correct";
+                    imgAnswer1.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label1.Text = "Incorrect";
+                    imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer2 == ListItem2 * dividingNumber)
+                {
+                    Label2.Text = "Correct";
+                    imgAnswer2.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label2.Text = "Incorrect";
+                    imgAnswer2.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer3 == ListItem3 * dividingNumber)
+                {
+                    Label3.Text = "Correct";
+                    imgAnswer3.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label3.Text = "Incorrect";
+                    imgAnswer3.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer4 == ListItem4 * dividingNumber)
+                {
+                    Label4.Text = "Correct";
+                    imgAnswer4.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label4.Text = "Incorrect";
+                    imgAnswer4.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer5 == ListItem5 * dividingNumber)
+                {
+                    Label5.Text = "Correct";
+                    imgAnswer5.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label5.Text = "Incorrect";
+                    imgAnswer5.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer6 == ListItem6 * dividingNumber)
+                {
+                    Label6.Text = "Correct";
+                    imgAnswer6.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label6.Text = "Incorrect";
+                    imgAnswer6.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer7 == ListItem7 * dividingNumber)
+                {
+                    Label7.Text = "Correct";
+                    imgAnswer7.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label7.Text = "Incorrect";
+                    imgAnswer7.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer8 == ListItem8 * dividingNumber)
+                {
+                    Label8.Text = "Correct";
+                    imgAnswer8.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label8.Text = "Incorrect";
+                    imgAnswer8.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer9 == ListItem9 * dividingNumber)
+                {
+                    Label9.Text = "Correct";
+                    imgAnswer9.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label9.Text = "Incorrect";
+                    imgAnswer9.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer10 == ListItem10 * dividingNumber)
+                {
+                    Label10.Text = "Correct";
+                    imgAnswer10.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label10.Text = "Incorrect";
+                    imgAnswer10.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer11 == ListItem11 * dividingNumber)
+                {
+                    Label11.Text = "Correct";
+                    imgAnswer11.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label11.Text = "Incorrect";
+                    imgAnswer11.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer12 == ListItem12 * dividingNumber)
+                {
+                    Label12.Text = "Correct";
+                    imgAnswer12.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label12.Text = "Incorrect";
+                    imgAnswer12.ImageUrl = "/Image/IncorrectMascot.png";
+                }
             }
-            else
+            if (strMode == "D")
             {
-                Label2.Text = "Incorrect";
-                imgAnswer2.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer3 == ListItem3 + dividingNumber)
-            {
-                Label3.Text = "Correct";
-                imgAnswer3.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label3.Text = "Incorrect";
-                imgAnswer3.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer4 == ListItem4 + dividingNumber)
-            {
-                Label4.Text = "Correct";
-                imgAnswer4.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label4.Text = "Incorrect";
-                imgAnswer4.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer5 == ListItem5 + dividingNumber)
-            {
-                Label5.Text = "Correct";
-                imgAnswer5.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label5.Text = "Incorrect";
-                imgAnswer5.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer6 == ListItem6 + dividingNumber)
-            {
-                Label6.Text = "Correct";
-                imgAnswer6.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label6.Text = "Incorrect";
-                imgAnswer6.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer7 == ListItem7 + dividingNumber)
-            {
-                Label7.Text = "Correct";
-                imgAnswer7.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label7.Text = "Incorrect";
-                imgAnswer7.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer8 == ListItem8 + dividingNumber)
-            {
-                Label8.Text = "Correct";
-                imgAnswer8.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label8.Text = "Incorrect";
-                imgAnswer8.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer9 == ListItem9 + dividingNumber)
-            {
-                Label9.Text = "Correct";
-                imgAnswer9.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label9.Text = "Incorrect";
-                imgAnswer9.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer10 == ListItem10 + dividingNumber)
-            {
-                Label10.Text = "Correct";
-                imgAnswer10.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label10.Text = "Incorrect";
-                imgAnswer10.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer11 == ListItem11 + dividingNumber)
-            {
-                Label11.Text = "Correct";
-                imgAnswer11.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label11.Text = "Incorrect";
-                imgAnswer11.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer12 == ListItem12 + dividingNumber)
-            {
-                Label12.Text = "Correct";
-                imgAnswer12.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label12.Text = "Incorrect";
-                imgAnswer12.ImageUrl = "/Image/IncorrectMascot.png";
+                if (answer1 == ListItem1 / dividingNumber)
+                {
+                    Label1.Text = "Correct";
+                    imgAnswer1.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label1.Text = "Incorrect";
+                    imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer2 == ListItem2 / dividingNumber)
+                {
+                    Label2.Text = "Correct";
+                    imgAnswer2.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label2.Text = "Incorrect";
+                    imgAnswer2.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer3 == ListItem3 / dividingNumber)
+                {
+                    Label3.Text = "Correct";
+                    imgAnswer3.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label3.Text = "Incorrect";
+                    imgAnswer3.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer4 == ListItem4 / dividingNumber)
+                {
+                    Label4.Text = "Correct";
+                    imgAnswer4.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label4.Text = "Incorrect";
+                    imgAnswer4.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer5 == ListItem5 / dividingNumber)
+                {
+                    Label5.Text = "Correct";
+                    imgAnswer5.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label5.Text = "Incorrect";
+                    imgAnswer5.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer6 == ListItem6 / dividingNumber)
+                {
+                    Label6.Text = "Correct";
+                    imgAnswer6.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label6.Text = "Incorrect";
+                    imgAnswer6.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer7 == ListItem7 / dividingNumber)
+                {
+                    Label7.Text = "Correct";
+                    imgAnswer7.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label7.Text = "Incorrect";
+                    imgAnswer7.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer8 == ListItem8 / dividingNumber)
+                {
+                    Label8.Text = "Correct";
+                    imgAnswer8.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label8.Text = "Incorrect";
+                    imgAnswer8.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer9 == ListItem9 / dividingNumber)
+                {
+                    Label9.Text = "Correct";
+                    imgAnswer9.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label9.Text = "Incorrect";
+                    imgAnswer9.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer10 == ListItem10 / dividingNumber)
+                {
+                    Label10.Text = "Correct";
+                    imgAnswer10.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label10.Text = "Incorrect";
+                    imgAnswer10.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer11 == ListItem11 / dividingNumber)
+                {
+                    Label11.Text = "Correct";
+                    imgAnswer11.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label11.Text = "Incorrect";
+                    imgAnswer11.ImageUrl = "/Image/IncorrectMascot.png";
+                }
+                if (answer12 == ListItem12 / dividingNumber)
+                {
+                    Label12.Text = "Correct";
+                    imgAnswer12.ImageUrl = "/Image/CorrectMascot.png";
+                    counter = counter + 1;
+                }
+                else
+                {
+                    Label12.Text = "Incorrect";
+                    imgAnswer12.ImageUrl = "/Image/IncorrectMascot.png";
+                }
             }
         }
-        if (strMode == "S")
-        {
-            if (answer1 == ListItem1 - dividingNumber)
-            {
-                Label1.Text = "Correct";
-                imgAnswer1.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label1.Text = "Incorrect";
-                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer2 == ListItem2 - dividingNumber)
-            {
-                Label2.Text = "Correct";
-                imgAnswer2.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label2.Text = "Incorrect";
-                imgAnswer2.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer3 == ListItem3 - dividingNumber)
-            {
-                Label3.Text = "Correct";
-                imgAnswer3.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label3.Text = "Incorrect";
-                imgAnswer3.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer4 == ListItem4 - dividingNumber)
-            {
-                Label4.Text = "Correct";
-                imgAnswer4.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label4.Text = "Incorrect";
-                imgAnswer4.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer5 == ListItem5 - dividingNumber)
-            {
-                Label5.Text = "Correct";
-                imgAnswer5.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label5.Text = "Incorrect";
-                imgAnswer5.ImageUrl = "/Image/IncorrectMascot.png";
-                counter = counter + 1;
-            }
-            if (answer6 == ListItem6 - dividingNumber)
-            {
-                Label6.Text = "Correct";
-                imgAnswer6.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label6.Text = "Incorrect";
-                imgAnswer6.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer7 == ListItem7 - dividingNumber)
-            {
-                Label7.Text = "Correct";
-                imgAnswer7.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label7.Text = "Incorrect";
-                imgAnswer7.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer8 == ListItem8 - dividingNumber)
-            {
-                Label8.Text = "Correct";
-                imgAnswer8.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label8.Text = "Incorrect";
-                imgAnswer8.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer9 == ListItem9 - dividingNumber)
-            {
-                Label9.Text = "Correct";
-                imgAnswer9.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label9.Text = "Incorrect";
-                imgAnswer9.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer10 == ListItem10 - dividingNumber)
-            {
-                Label10.Text = "Correct";
-                imgAnswer10.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label10.Text = "Incorrect";
-                imgAnswer10.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer11 == ListItem11 - dividingNumber)
-            {
-                Label11.Text = "Correct";
-                imgAnswer11.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label11.Text = "Incorrect";
-                imgAnswer11.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer12 == ListItem12 - dividingNumber)
-            {
-                Label12.Text = "Correct";
-                imgAnswer12.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label12.Text = "Incorrect";
-                imgAnswer12.ImageUrl = "/Image/IncorrectMascot.png";
-            }
         }
-        if (strMode == "M")
-        {
-            if (answer1 == ListItem1 * dividingNumber)
-            {
-                Label1.Text = "Correct";
-                imgAnswer1.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label1.Text = "Incorrect";
-                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer2 == ListItem2 * dividingNumber)
-            {
-                Label2.Text = "Correct";
-                imgAnswer2.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label2.Text = "Incorrect";
-                imgAnswer2.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer3 == ListItem3 * dividingNumber)
-            {
-                Label3.Text = "Correct";
-                imgAnswer3.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label3.Text = "Incorrect";
-                imgAnswer3.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer4 == ListItem4 * dividingNumber)
-            {
-                Label4.Text = "Correct";
-                imgAnswer4.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label4.Text = "Incorrect";
-                imgAnswer4.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer5 == ListItem5 * dividingNumber)
-            {
-                Label5.Text = "Correct";
-                imgAnswer5.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label5.Text = "Incorrect";
-                imgAnswer5.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer6 == ListItem6 * dividingNumber)
-            {
-                Label6.Text = "Correct";
-                imgAnswer6.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label6.Text = "Incorrect";
-                imgAnswer6.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer7 == ListItem7 * dividingNumber)
-            {
-                Label7.Text = "Correct";
-                imgAnswer7.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label7.Text = "Incorrect";
-                imgAnswer7.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer8 == ListItem8 * dividingNumber)
-            {
-                Label8.Text = "Correct";
-                imgAnswer8.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label8.Text = "Incorrect";
-                imgAnswer8.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer9 == ListItem9 * dividingNumber)
-            {
-                Label9.Text = "Correct";
-                imgAnswer9.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label9.Text = "Incorrect";
-                imgAnswer9.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer10 == ListItem10 * dividingNumber)
-            {
-                Label10.Text = "Correct";
-                imgAnswer10.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label10.Text = "Incorrect";
-                imgAnswer10.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer11 == ListItem11 * dividingNumber)
-            {
-                Label11.Text = "Correct";
-                imgAnswer11.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label11.Text = "Incorrect";
-                imgAnswer11.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer12 == ListItem12 * dividingNumber)
-            {
-                Label12.Text = "Correct";
-                imgAnswer12.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label12.Text = "Incorrect";
-                imgAnswer12.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-        }
-        if (strMode == "D")
-        {
-            if (answer1 == ListItem1 / dividingNumber)
-            {
-                Label1.Text = "Correct";
-                imgAnswer1.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label1.Text = "Incorrect";
-                imgAnswer1.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer2 == ListItem2 / dividingNumber)
-            {
-                Label2.Text = "Correct";
-                imgAnswer2.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label2.Text = "Incorrect";
-                imgAnswer2.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer3 == ListItem3 / dividingNumber)
-            {
-                Label3.Text = "Correct";
-                imgAnswer3.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label3.Text = "Incorrect";
-                imgAnswer3.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer4 == ListItem4 / dividingNumber)
-            {
-                Label4.Text = "Correct";
-                imgAnswer4.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label4.Text = "Incorrect";
-                imgAnswer4.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer5 == ListItem5 / dividingNumber)
-            {
-                Label5.Text = "Correct";
-                imgAnswer5.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label5.Text = "Incorrect";
-                imgAnswer5.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer6 == ListItem6 / dividingNumber)
-            {
-                Label6.Text = "Correct";
-                imgAnswer6.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label6.Text = "Incorrect";
-                imgAnswer6.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer7 == ListItem7 / dividingNumber)
-            {
-                Label7.Text = "Correct";
-                imgAnswer7.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label7.Text = "Incorrect";
-                imgAnswer7.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer8 == ListItem8 / dividingNumber)
-            {
-                Label8.Text = "Correct";
-                imgAnswer8.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label8.Text = "Incorrect";
-                imgAnswer8.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer9 == ListItem9 / dividingNumber)
-            {
-                Label9.Text = "Correct";
-                imgAnswer9.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label9.Text = "Incorrect";
-                imgAnswer9.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer10 == ListItem10 / dividingNumber)
-            {
-                Label10.Text = "Correct";
-                imgAnswer10.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label10.Text = "Incorrect";
-                imgAnswer10.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer11 == ListItem11 / dividingNumber)
-            {
-                Label11.Text = "Correct";
-                imgAnswer11.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label11.Text = "Incorrect";
-                imgAnswer11.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-            if (answer12 == ListItem12 / dividingNumber)
-            {
-                Label12.Text = "Correct";
-                imgAnswer12.ImageUrl = "/Image/CorrectMascot.png";
-                counter = counter + 1;
-            }
-            else
-            {
-                Label12.Text = "Incorrect";
-                imgAnswer12.ImageUrl = "/Image/IncorrectMascot.png";
-            }
-        }
-        //}
-        //}
 
 
-        timeTaken2 = Convert.ToDecimal(lblTimer.Text);
+        //timeTaken2 = Convert.ToDecimal(lblTimer.Text);
 
         con.Open();
         SqlCommand cmd = con.CreateCommand();
