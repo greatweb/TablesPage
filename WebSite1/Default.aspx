@@ -14,6 +14,12 @@
             <h2>Getting started</h2>
             <p>
                 Start By Logging In Or Signing Up For An Account</p>
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
         </div>
         <div class="col-md-4">
             <h2>Results</h2>

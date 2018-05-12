@@ -27,7 +27,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
         <br />
-        <asp:Button ID="btn5TimesTables" runat="server" Height="100px" Text="+ 5 Times Tables" Width="200px" OnClick="btn5TimesTables_Click" />
+        <asp:Button ID="btn5TimesTables" runat="server" Height="100px" Text="+ 5 Tables" Width="200px" OnClick="btn5TimesTables_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btn6TimesTables" runat="server" Height="100px" Text="+ 6 Tables" Width="200px" OnClick="btn6TimesTables_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -37,7 +37,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
         <br />
-        <asp:Button ID="btn9TimesTables" runat="server" Height="100px" Text="+ 9 Times Tables" Width="200px" OnClick="btn9TimesTables_Click" />
+        <asp:Button ID="btn9TimesTables" runat="server" Height="100px" Text="+ 9 Tables" Width="200px" OnClick="btn9TimesTables_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btn10TimesTables" runat="server" Height="100px" Text="+ 10 Tables" Width="200px" OnClick="btn10TimesTables_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
