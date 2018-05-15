@@ -39,9 +39,9 @@ nav ul {
     top: -18px;
 }
 
-div {
+/*div {
     width: 380px;
-}
+}*/
 
 nav ul li {
     display: inline;
@@ -129,6 +129,7 @@ div1 {
 
 .loginDiv {
     font-size: 10%;
+    height: 0px;
 }
 
 .menu {

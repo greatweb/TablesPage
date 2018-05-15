@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 using System;
+using System.Net;
+using System.Net.Mail;
 using System.Web;
 using System.Web.UI;
 using WebSite1;
@@ -37,4 +39,34 @@ public partial class Account_Login : Page
                 }
             }
         }
+
+    protected void ForgotPassword_Click(object sender, EventArgs e)
+    {
+        var fromAddress = new MailAddress("maximredmond@gmail.com");
+        var fromPassword = "nnnnuuuu";
+        var toAddress = new MailAddress("theirishlerachaun@gmail.com");
+
+        string subject = "Change Password";
+        string body = "";
+
+        System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
+        {
+            Host = "smtp.gmail.com",
+            Port = 587,
+            EnableSsl = true,
+            DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
+            UseDefaultCredentials = false,
+            Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
+
+        };
+
+        using (var message = new MailMessage(fromAddress, toAddress)
+        {
+            Subject = subject,
+            Body = body
+        })
+
+
+            smtp.Send(message);
+    }
 }

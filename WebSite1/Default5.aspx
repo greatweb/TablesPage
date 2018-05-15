@@ -14,7 +14,7 @@
                 <td>
                     <asp:Label ID="lblNo1B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns1" runat="server" autocomplete="false" /></td>
+                    <asp:TextBox ID="txtAns1" runat="server" autocomplete="false" AutoCompleteType="Disabled" /></td>
                 <td>
                     <asp:Image ID="imgAnswer1" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label1" Visible="false" runat="server" Text=""></asp:Label>
@@ -28,7 +28,7 @@
                 <td>
                     <asp:Label ID="lblNo2B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns2" runat="server" autocomplete="false" /></td>
+                    <asp:TextBox ID="txtAns2" runat="server" autocomplete="false" AutoCompleteType="Disabled" /></td>
                 <td>
                     <asp:Image ID="imgAnswer2" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label2" Visible="false" runat="server" Text=""></asp:Label>
@@ -43,7 +43,7 @@
                 <td>
                     <asp:Label ID="lblNo3B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns3" runat="server" autocomplete="false" /></td>
+                    <asp:TextBox ID="txtAns3" runat="server" autocomplete="false" AutoCompleteType="Disabled" /></td>
                 <td>
                     <asp:Image ID="imgAnswer3" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label3" Visible="false" runat="server" Text=""></asp:Label>
@@ -58,7 +58,7 @@
                 <td>
                     <asp:Label ID="lblNo4B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns4" runat="server" autocomplete="false" /></td>
+                    <asp:TextBox ID="txtAns4" runat="server" autocomplete="false" AutoCompleteType="Disabled" /></td>
                 <td>
                     <asp:Image ID="imgAnswer4" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label4" Visible="false" runat="server" Text=""></asp:Label>
@@ -78,7 +78,7 @@
                 <td>
                     <asp:Label ID="lblNo5B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns5" runat="server" autocomplete="false" /></td>
+                    <asp:TextBox ID="txtAns5" runat="server" autocomplete="false" AutoCompleteType="Disabled" /></td>
                 <td>
                     <asp:Image ID="imgAnswer5" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label5" Visible="false" runat="server" Text=""></asp:Label>
@@ -92,7 +92,7 @@
                 <td>
                     <asp:Label ID="lblNo6B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns6" runat="server" autocomplete="false" /></td>
+                    <asp:TextBox ID="txtAns6" runat="server" autocomplete="false" AutoCompleteType="Disabled" /></td>
                 <td>
                     <asp:Image ID="imgAnswer6" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label6" Visible="false" runat="server" Text=""></asp:Label>
@@ -106,7 +106,7 @@
                 <td>
                     <asp:Label ID="lblNo7B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns7" runat="server" autocomplete="false" /></td>
+                    <asp:TextBox ID="txtAns7" runat="server" autocomplete="false" AutoCompleteType="Disabled" /></td>
                 <td>
                     <asp:Image ID="imgAnswer7" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label7" Visible="false" runat="server" Text=""></asp:Label>
@@ -120,7 +120,7 @@
                 <td>
                     <asp:Label ID="lblNo8B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns8" runat="server" autocomplete="false" OnTextChanged="txtAns8_TextChanged" /></td>
+                    <asp:TextBox ID="txtAns8" runat="server" autocomplete="false" OnTextChanged="txtAns8_TextChanged" AutoCompleteType="Disabled" /></td>
                 <td>
                     <asp:Image ID="imgAnswer8" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label8" Visible="false" runat="server" Text=""></asp:Label>
@@ -139,7 +139,7 @@
                 <td>
                     <asp:Label ID="lblNo9B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns9" runat="server" autocomplete="false" /></td>
+                    <asp:TextBox ID="txtAns9" runat="server" autocomplete="false" AutoCompleteType="Disabled" /></td>
                 <td>
                     <asp:Image ID="imgAnswer9" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label9" Visible="false" runat="server" Text=""></asp:Label>
@@ -153,7 +153,7 @@
                 <td>
                     <asp:Label ID="lblNo10B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns10" runat="server" autocomplete="false" /></td>
+                    <asp:TextBox ID="txtAns10" runat="server" autocomplete="false" AutoCompleteType="Disabled" /></td>
                 <td>
                     <asp:Image ID="imgAnswer10" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label10" Visible="false" runat="server" Text=""></asp:Label>
@@ -167,7 +167,7 @@
                 <td>
                     <asp:Label ID="lblNo11B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns11" runat="server" autocomplete="false" /></td>
+                    <asp:TextBox ID="txtAns11" runat="server" autocomplete="false" AutoCompleteType="Disabled" /></td>
                 <td>
                     <asp:Image ID="imgAnswer11" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label11" Visible="false" runat="server" Text=""></asp:Label>
@@ -181,7 +181,7 @@
                 <td>
                     <asp:Label ID="lblNo12B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns12" runat="server" autocomplete="false" /></td>
+                    <asp:TextBox ID="txtAns12" runat="server" autocomplete="false" AutoCompleteType="Disabled" /></td>
                 <td>
                     <asp:Image ID="imgAnswer12" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label12" Visible="false" runat="server" Text=""></asp:Label>
@@ -191,13 +191,11 @@
         </table>
         <br />
         <br />
-        <br />
-        <br />
-        <asp:Button ID="Button1" runat="server" Height="145px" Text="Confirm" Width="220px" OnClick="Button1_Click" />
-        &nbsp;<asp:Label runat="server" ID="lblTimer" Style=" color: white;" Text="4.875"></asp:Label>
-        <button type="button" id="button1" onclick="initialise()">Start</button>
+        <asp:Button ID="btnConfirm" runat="server" Height="145px" Text="Confirm" Width="220px" OnClick="Button1_Click" />
+<%--        &nbsp;<asp:Label runat="server" ID="lblTimer" Style=" color: black;" >qwertyuiop</asp:Label>--%>
+        <%--<button type="button" id="btnStart" onclick="initialise()" style="height: 145px; width: 220px;" >Start</button>--%>
 
-        <script>
+<%--        <script>
             function check() {
                 var a = document.getElementById("textbox1");
                 if (a.value == "1") {
@@ -211,9 +209,9 @@
 
                 clearInterval(x);
 
-                document.getElementById("button1").disabled = false;
+                document.getElementById("btnStart").disabled = false;
 
-                var Timer = new Date(); Timer.setSeconds(Timer.getSeconds() + 30);
+                var Timer = new Date(); Timer.setSeconds(Timer.getSeconds() + 3);
 
 
 
@@ -233,41 +231,40 @@
                     var mseconds = Math.floor((distance % (1000)));
 
 
-                    document.getElementById('lblTimer').innerHTML = seconds + '.' + mseconds;
-                    document.getElementById('txtTimer').innerHTML = seconds + '.' + mseconds;
+                    document.getElementById('lblTimer').innerHTML = seconds + 's' + mseconds + 'ms';
 
                     if (distance < 0) {
                     clearInterval(x);
                     document.getElementById("lblTimer").innerHTML = "Time Up";
-                    document.getElementById("button1").disabled = false;
-                    document.getElementById("txtAns1").disabled = false;
-                    document.getElementById("txtAns2").disabled = false;
-                    document.getElementById("txtAns3").disabled = false;
-                    document.getElementById("txtAns4").disabled = false;
-                    document.getElementById("txtAns5").disabled = false;
-                    document.getElementById("txtAns6").disabled = false;
-                    document.getElementById("txtAns7").disabled = false;
-                    document.getElementById("txtAns8").disabled = false;
-                    document.getElementById("txtAns9").disabled = false;
-                    document.getElementById("txtAns10").disabled = false;
-                    document.getElementById("txtAns11").disabled = false;
-                    document.getElementById("txtAns12").disabled = false;
+                    document.getElementById("btnStart").innerHTML = "Restart";
+                    document.getElementById("MainContent_txtAns1").readOnly = true;
+                    document.getElementById("MainContent_txtAns2").readOnly = true;
+                    document.getElementById("MainContent_txtAns3").readOnly = true;
+                    document.getElementById("MainContent_txtAns4").readOnly = true;
+                    document.getElementById("MainContent_txtAns5").readOnly = true;
+                    document.getElementById("MainContent_txtAns6").readOnly = true;
+                    document.getElementById("MainContent_txtAns7").readOnly = true;
+                    document.getElementById("MainContent_txtAns8").readOnly = true;
+                    document.getElementById("MainContent_txtAns9").readOnly = true;
+                    document.getElementById("MainContent_txtAns10").readOnly = true;
+                    document.getElementById("MainContent_txtAns11").readOnly = true;
+                    document.getElementById("MainContent_txtAns12").readOnly = true;
                     }
                 }, 10);
                 if (distance = 30) {
-                    document.getElementById("button1").disabled = true;
-                    document.getElementById("txtAns1").disabled = true;
-                    document.getElementById("txtAns2").disabled = true;
-                    document.getElementById("txtAns3").disabled = true;
-                    document.getElementById("txtAns4").disabled = true;
-                    document.getElementById("txtAns5").disabled = true;
-                    document.getElementById("txtAns6").disabled = true;
-                    document.getElementById("txtAns7").disabled = true;
-                    document.getElementById("txtAns8").disabled = true;
-                    document.getElementById("txtAns9").disabled = true;
-                    document.getElementById("txtAns10").disabled = true;
-                    document.getElementById("txtAns11").disabled = true;
-                    document.getElementById("txtAns12").disabled = true;
+                    document.getElementById("btnStart").innerHTML = "Start";
+                    document.getElementById("MainContent_txtAns1").readOnly = false;
+                    document.getElementById("MainContent_txtAns2").readOnly = false;
+                    document.getElementById("MainContent_txtAns3").readOnly = false;
+                    document.getElementById("MainContent_txtAns4").readOnly = false;
+                    document.getElementById("MainContent_txtAns5").readOnly = false;
+                    document.getElementById("MainContent_txtAns6").readOnly = false;
+                    document.getElementById("MainContent_txtAns7").readOnly = false;
+                    document.getElementById("MainContent_txtAns8").readOnly = false;
+                    document.getElementById("MainContent_txtAns9").readOnly = false;
+                    document.getElementById("MainContent_txtAns10").readOnly = false;
+                    document.getElementById("MainContent_txtAns11").readOnly = false;
+                    document.getElementById("MainContent_txtAns12").readOnly = false;
 
 
                 }
@@ -275,5 +272,7 @@
 
             }
 
-        </script>
+        </script>--%>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnRestart" runat="server" Height="145px" Text="Restart" Width="220px" OnClick="btnRestart_Click" />
     </asp:Content>

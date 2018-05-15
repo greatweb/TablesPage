@@ -6,12 +6,11 @@
     <link href="CSS/StyleSheet1.css" rel="stylesheet" />
             </asp:PlaceHolder>
 
-<div class="loginDiv">
-                &nbsp;</div>
     <div id="div1">
         <asp:TextBox ID="scoreForm" type="hidden" name="score" value="0" runat="server"></asp:TextBox>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox1"  runat="server" placeholder="Name"></asp:TextBox>
+            &nbsp;<br />
+        &nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox1"  runat="server" placeholder="Name" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
 -&nbsp;<br/>
             &nbsp;<br/>
             

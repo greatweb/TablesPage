@@ -76,9 +76,6 @@ public partial class Default5 : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         Random randomizer = new Random();
-        int txtBoxAnswer = 0;
-        int txtBoxAnswer2 = 0;
-        int txtBoxAnswer3 = 0;
         String strMode = Request.QueryString["mode"];
         String strNumber = Request.QueryString["number"];
         if (strMode == null)
@@ -86,6 +83,9 @@ public partial class Default5 : System.Web.UI.Page
             strMode = "M";
             strNumber = "1";
         }
+        int txtBoxAnswer = 0;
+        int txtBoxAnswer2 = 0;
+        int txtBoxAnswer3 = 0;
 
 
 
@@ -1676,6 +1676,18 @@ public partial class Default5 : System.Web.UI.Page
         }
         }
 
+        txtAns1.ReadOnly = true;
+        txtAns2.ReadOnly = true;
+        txtAns3.ReadOnly = true;
+        txtAns4.ReadOnly = true;
+        txtAns5.ReadOnly = true;
+        txtAns6.ReadOnly = true;
+        txtAns7.ReadOnly = true;
+        txtAns8.ReadOnly = true;
+        txtAns9.ReadOnly = true;
+        txtAns10.ReadOnly = true;
+        txtAns11.ReadOnly = true;
+        txtAns12.ReadOnly = true;
 
         //timeTaken2 = Convert.ToDecimal(lblTimer.Text);
 
@@ -1703,5 +1715,191 @@ public partial class Default5 : System.Web.UI.Page
     protected void txtAns8_TextChanged(object sender, EventArgs e)
     {
 
+    }
+
+    protected void btnRestart_Click(object sender, EventArgs e)
+    {
+        Random randomizer = new Random();
+        String strMode = Request.QueryString["mode"];
+        String strNumber = Request.QueryString["number"];
+
+        txtAns1.Text = "";
+        txtAns2.Text = "";
+        txtAns3.Text = "";
+        txtAns4.Text = "";
+        txtAns5.Text = "";
+        txtAns6.Text = "";
+        txtAns7.Text = "";
+        txtAns8.Text = "";
+        txtAns9.Text = "";
+        txtAns10.Text = "";
+        txtAns11.Text = "";
+        txtAns12.Text = "";
+
+        imgAnswer1.ImageUrl = "";
+        imgAnswer2.ImageUrl = "";
+        imgAnswer3.ImageUrl = "";
+        imgAnswer4.ImageUrl = "";
+        imgAnswer5.ImageUrl = "";
+        imgAnswer6.ImageUrl = "";
+        imgAnswer7.ImageUrl = "";
+        imgAnswer8.ImageUrl = "";
+        imgAnswer9.ImageUrl = "";
+        imgAnswer10.ImageUrl = "";
+        imgAnswer11.ImageUrl = "";
+        imgAnswer12.ImageUrl = "";
+
+        GoldMedal.ImageUrl = "";
+        SilverMedal.ImageUrl = "";
+
+        imgAnswer1.Visible = false;
+        imgAnswer2.Visible = false;
+        imgAnswer3.Visible = false;
+        imgAnswer4.Visible = false;
+        imgAnswer5.Visible = false;
+        imgAnswer6.Visible = false;
+        imgAnswer7.Visible = false;
+        imgAnswer8.Visible = false;
+        imgAnswer9.Visible = false;
+        imgAnswer10.Visible = false;
+        imgAnswer11.Visible = false;
+        imgAnswer12.Visible = false;
+
+        GoldMedal.Visible = false;
+        SilverMedal.Visible = false;
+
+        txtAns1.ReadOnly = false;
+        txtAns2.ReadOnly = false;
+        txtAns3.ReadOnly = false;
+        txtAns4.ReadOnly = false;
+        txtAns5.ReadOnly = false;
+        txtAns6.ReadOnly = false;
+        txtAns7.ReadOnly = false;
+        txtAns8.ReadOnly = false;
+        txtAns9.ReadOnly = false;
+        txtAns10.ReadOnly = false;
+        txtAns11.ReadOnly = false;
+        txtAns12.ReadOnly = false;
+
+        while (randomList.Count < 12)
+        {
+            //If Mode is subtraction
+            if (strMode == "S")
+            {
+                MyNumber = randomizer.Next(dividingNumber, dividingNumber + 12);
+                if (!randomList.Contains(MyNumber))
+                {
+                    randomList.Add(MyNumber);
+                }
+            }
+            //If Mode is Division
+            else if (strMode == "D")
+            {
+                MyNumber = randomizer.Next(1, 13) * dividingNumber;
+                if (!randomList.Contains(MyNumber))
+                {
+                    randomList.Add(MyNumber);
+                }
+            }
+            //If Mode is Anything else  (i.e. Add or Multiply)
+            else
+            {
+                MyNumber = randomizer.Next(1, 13);
+                if (!randomList.Contains(MyNumber))
+                {
+                    randomList.Add(MyNumber);
+                }
+            }
+
+
+        }
+        {
+            lblNo1A.Text = randomList[0].ToString();
+            lblNo2A.Text = randomList[1].ToString();
+            lblNo3A.Text = randomList[2].ToString();
+            lblNo4A.Text = randomList[3].ToString();
+            lblNo5A.Text = randomList[4].ToString();
+            lblNo6A.Text = randomList[5].ToString();
+            lblNo7A.Text = randomList[6].ToString();
+            lblNo8A.Text = randomList[7].ToString();
+            lblNo9A.Text = randomList[8].ToString();
+            lblNo10A.Text = randomList[9].ToString();
+            lblNo11A.Text = randomList[10].ToString();
+            lblNo12A.Text = randomList[11].ToString();
+
+            lblNo1B.Text = strNumber;
+            lblNo2B.Text = strNumber;
+            lblNo3B.Text = strNumber;
+            lblNo4B.Text = strNumber;
+            lblNo5B.Text = strNumber;
+            lblNo6B.Text = strNumber;
+            lblNo7B.Text = strNumber;
+            lblNo8B.Text = strNumber;
+            lblNo9B.Text = strNumber;
+            lblNo10B.Text = strNumber;
+            lblNo11B.Text = strNumber;
+            lblNo12B.Text = strNumber;
+
+            if (strMode == "A")
+            {
+                lbl1Op.Text = "+";
+                lbl2Op.Text = "+";
+                lbl3Op.Text = "+";
+                lbl4Op.Text = "+";
+                lbl5Op.Text = "+";
+                lbl6Op.Text = "+";
+                lbl7Op.Text = "+";
+                lbl8Op.Text = "+";
+                lbl9Op.Text = "+";
+                lbl10Op.Text = "+";
+                lbl11Op.Text = "+";
+                lbl12Op.Text = "+";
+            }
+            if (strMode == "S")
+            {
+                lbl1Op.Text = "-";
+                lbl2Op.Text = "-";
+                lbl3Op.Text = "-";
+                lbl4Op.Text = "-";
+                lbl5Op.Text = "-";
+                lbl6Op.Text = "-";
+                lbl7Op.Text = "-";
+                lbl8Op.Text = "-";
+                lbl9Op.Text = "-";
+                lbl10Op.Text = "-";
+                lbl11Op.Text = "-";
+                lbl12Op.Text = "-";
+            }
+            if (strMode == "D")
+            {
+                lbl1Op.Text = "÷";
+                lbl2Op.Text = "÷";
+                lbl3Op.Text = "÷";
+                lbl4Op.Text = "÷";
+                lbl5Op.Text = "÷";
+                lbl6Op.Text = "÷";
+                lbl7Op.Text = "÷";
+                lbl8Op.Text = "÷";
+                lbl9Op.Text = "÷";
+                lbl10Op.Text = "÷";
+                lbl11Op.Text = "÷";
+                lbl12Op.Text = "÷";
+            }
+            if (strMode == "M")
+            {
+                lbl1Op.Text = "×";
+                lbl2Op.Text = "×";
+                lbl3Op.Text = "×";
+                lbl4Op.Text = "×";
+                lbl5Op.Text = "×";
+                lbl6Op.Text = "×";
+                lbl7Op.Text = "×";
+                lbl8Op.Text = "×";
+                lbl9Op.Text = "×";
+                lbl10Op.Text = "×";
+                lbl11Op.Text = "×";
+                lbl12Op.Text = "×";
+            }
+        }
     }
 }

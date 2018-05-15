@@ -42,6 +42,8 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
+                            <asp:Button ID="ForgotPassword" runat="server" Text="Forgot My Password" CssClass="btn btn-default" OnClick="ForgotPassword_Click"/>
+                            <br />
                             <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="btn btn-default" />
                         </div>
                     </div>
