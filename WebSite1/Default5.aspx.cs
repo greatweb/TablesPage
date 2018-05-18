@@ -1709,7 +1709,7 @@ public partial class Default5 : System.Web.UI.Page
             SilverMedal.ImageUrl = "/Image/SilverStar.png";
         }
 
-
+        btnConfirm.Enabled = false;
     }
 
     protected void txtAns8_TextChanged(object sender, EventArgs e)
@@ -1751,6 +1751,8 @@ public partial class Default5 : System.Web.UI.Page
 
         GoldMedal.ImageUrl = "";
         SilverMedal.ImageUrl = "";
+
+        btnConfirm.Enabled = true;
 
         imgAnswer1.Visible = false;
         imgAnswer2.Visible = false;
@@ -1899,6 +1901,8 @@ public partial class Default5 : System.Web.UI.Page
                 lbl10Op.Text = "×";
                 lbl11Op.Text = "×";
                 lbl12Op.Text = "×";
+
+                
             }
         }
     }

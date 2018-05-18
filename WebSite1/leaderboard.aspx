@@ -1,17 +1,14 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="leaderboard.aspx.cs" Inherits="Default3" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeFile="leaderboard.aspx.cs" Inherits="Default3" %>
 
-<!DOCTYPE html>
+<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+    <asp:PlaceHolder runat="server">
     <link height="10" href="hand.png" rel="shortcut icon" width="20" />
     <title>Clicker</title>
     
    
     <link href="CSS/StyleSheet1.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <form id="form1" runat="server">
+</asp:PlaceHolder>
         <div>
             <nav>
                 <ul>
@@ -26,7 +23,4 @@
         </div>
         <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged1" Width="935px">
         </asp:GridView>
-    </form>
-    </body>
-</html>
-
+</asp:Content>
