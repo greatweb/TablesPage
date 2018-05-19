@@ -9,10 +9,10 @@
         <asp:Image ID="over12" runat="server" style="float:left" Height="100px" Width="100px" />
     </div>
     
-    <table>
+    <table class="tableClass">
             <tr>
                 <td>
-                    <asp:Label ID="lblNo1A" runat="server" Text="lblNo1A | " onkeydown="if(event.keyCode==13) {event.keyCode=9;}" /></td>
+                    <asp:Label ID="lblNo1A" runat="server" Text="lblNo1A | "  /></td>
                 <td>
                     <asp:Label ID="lbl1Op" runat="server" Text="lbl1Op | " /></td>
                 <td>
@@ -73,7 +73,7 @@
         </table>
         <asp:Image ID="GoldMedal" runat="server" Style="float: right" Width="100px" Height="100px" />
 
-        <table>
+        <table class="tableClass">
             <tr>
                 <td>
                     <asp:Label ID="lblNo5A" runat="server" Text="lblNo1A | " /></td>
@@ -139,7 +139,7 @@
         <asp:Button ID="btnConfirm" runat="server" Height="85px" Text="Confirm" Width="142px" OnClick="Button1_Click" style="float: left;"/>
     <asp:Button ID="btnRestart" runat="server" Height="85px" Style="float: left;" Text="Restart" Width="142px" OnClick="btnRestart_Click" />
         </div>    
-    <table>
+    <table class="tableClass">
             <tr>
                 <td>
                     <asp:Label ID="lblNo9A" runat="server" Text="lblNo1A | " /></td>
@@ -198,8 +198,6 @@
             </tr>
 
         </table>
-        <br />
-        <br />
 <%--        &nbsp;<asp:Label runat="server" ID="lblTimer" Style=" color: black;" >qwertyuiop</asp:Label>--%>
         <%--<button type="button" id="btnStart" onclick="initialise()" style="height: 145px; width: 220px;" >Start</button>--%>
 

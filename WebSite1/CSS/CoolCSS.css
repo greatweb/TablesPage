@@ -48,3 +48,16 @@ img {
     position: center;
     font-size: 30px;
 }
+
+table {
+    width: 224px;
+}
+
+td{
+    min-width: 23px;
+}
+
+.tableClass {
+    min-width: 100px;
+    fl
+}

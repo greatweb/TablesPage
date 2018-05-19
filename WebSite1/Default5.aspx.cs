@@ -140,6 +140,8 @@ public partial class Default5 : System.Web.UI.Page
 
             }
             {
+
+
                 lblNo1A.Text = randomList[0].ToString();
                 lblNo2A.Text = randomList[1].ToString();
                 lblNo3A.Text = randomList[2].ToString();
