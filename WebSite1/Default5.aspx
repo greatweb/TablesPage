@@ -5,6 +5,10 @@
         <link href="CSS/CoolCSS.css" rel="stylesheet" />
         </asp:PlaceHolder>
     &nbsp;&nbsp;&nbsp;&nbsp;
+    <div style="width: 842px; float:right;">
+        <asp:Image ID="over12" runat="server" style="float:left" Height="100px" Width="100px" />
+    </div>
+    
     <table>
             <tr>
                 <td>

@@ -105,6 +105,7 @@ public partial class Default5 : System.Web.UI.Page
             imgAnswer12.Visible = false;
             GoldMedal.Visible = false;
             SilverMedal.Visible = false;
+            over12.Visible = false;
 
             while (randomList.Count < 12)
             {
@@ -1695,12 +1696,72 @@ public partial class Default5 : System.Web.UI.Page
         {
             GoldMedal.Visible = true;
             GoldMedal.ImageUrl = "/Image/CDPicture.png";
+            over12.Visible = true;
+            over12.ImageUrl = "http://localhost:55365/Image/12over12.png";
         }
         if (counter == 11)
         {
             SilverMedal.Visible = true;
             SilverMedal.ImageUrl = "/Image/SilverStar.png";
+            over12.Visible = true;
+            over12.ImageUrl = "http://localhost:55365/Image/11over12.png";
         }
+        if (counter == 10)
+        {
+            over12.Visible = true;
+            over12.ImageUrl = "http://localhost:55365/Image/10over12.png";
+        }
+        if (counter == 9)
+        {
+            over12.Visible = true;
+            over12.ImageUrl = "http://localhost:55365/Image/9over12.png";
+        }
+        if (counter == 8)
+        {
+            over12.Visible = true;
+            over12.ImageUrl = "http://localhost:55365/Image/8over12.png";
+        }
+        if (counter == 7)
+        {
+            over12.Visible = true;
+            over12.ImageUrl = "http://localhost:55365/Image/7over12.png";
+        }
+        if (counter == 6)
+        {
+            over12.Visible = true;
+            over12.ImageUrl = "http://localhost:55365/Image/6over12.png";
+        }
+        if (counter == 5)
+        {
+            over12.Visible = true;
+            over12.ImageUrl = "http://localhost:55365/Image/5over12.png";
+        }
+        if (counter == 4)
+        {
+            over12.Visible = true;
+            over12.ImageUrl = "http://localhost:55365/Image/4over12.png";
+        }
+        if (counter == 3)
+        {
+            over12.Visible = true;
+            over12.ImageUrl = "http://localhost:55365/Image/3over12.png";
+        }
+        if (counter == 2)
+        {
+            over12.Visible = true;
+            over12.ImageUrl = "http://localhost:55365/Image/2over12.png";
+        }
+        if (counter == 1)
+        {
+            over12.Visible = true;
+            over12.ImageUrl = "http://localhost:55365/Image/1over12.png";
+        }
+        if (counter == 0)
+        {
+            over12.Visible = true;
+            over12.ImageUrl = "http://localhost:55365/Image/0over12.png";
+        }
+
 
         btnConfirm.Enabled = false;
     }
@@ -1741,6 +1802,7 @@ public partial class Default5 : System.Web.UI.Page
         imgAnswer10.ImageUrl = "";
         imgAnswer11.ImageUrl = "";
         imgAnswer12.ImageUrl = "";
+        over12.ImageUrl = "";
 
         GoldMedal.ImageUrl = "";
         SilverMedal.ImageUrl = "";
@@ -1759,6 +1821,7 @@ public partial class Default5 : System.Web.UI.Page
         imgAnswer10.Visible = false;
         imgAnswer11.Visible = false;
         imgAnswer12.Visible = false;
+        over12.Visible = false;
 
         GoldMedal.Visible = false;
         SilverMedal.Visible = false;
