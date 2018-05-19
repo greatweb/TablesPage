@@ -83,15 +83,8 @@ public partial class Default5 : System.Web.UI.Page
             strMode = "M";
             strNumber = "1";
         }
-        int txtBoxAnswer = 0;
-        int txtBoxAnswer2 = 0;
-        int txtBoxAnswer3 = 0;
-
-
-
-
+        
         int dividingNumber = 0;
-        int ifSymbol = 0;
 
         dividingNumber = Convert.ToInt32(strNumber);
 

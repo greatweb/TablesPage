@@ -98,6 +98,7 @@
                     <asp:Label ID="Label6" Visible="false" runat="server" Text=""></asp:Label>
                 </td>
             </tr>
+
             <tr>
                 <td>
                     <asp:Label ID="lblNo7A" runat="server" Text="lblNo1A | " /></td>
@@ -130,7 +131,11 @@
 
         </table>
         <asp:Image ID="SilverMedal" runat="server" Style="float: right" Width="100px" Height="100px" />
-        <table>
+        <div style="width: 804px; float:right; height: 92px;">
+        <asp:Button ID="btnConfirm" runat="server" Height="85px" Text="Confirm" Width="142px" OnClick="Button1_Click" style="float: left;"/>
+    <asp:Button ID="btnRestart" runat="server" Height="85px" Style="float: left;" Text="Restart" Width="142px" OnClick="btnRestart_Click" />
+        </div>    
+    <table>
             <tr>
                 <td>
                     <asp:Label ID="lblNo9A" runat="server" Text="lblNo1A | " /></td>
@@ -191,7 +196,6 @@
         </table>
         <br />
         <br />
-        <asp:Button ID="btnConfirm" runat="server" Height="145px" Text="Confirm" Width="220px" OnClick="Button1_Click" />
 <%--        &nbsp;<asp:Label runat="server" ID="lblTimer" Style=" color: black;" >qwertyuiop</asp:Label>--%>
         <%--<button type="button" id="btnStart" onclick="initialise()" style="height: 145px; width: 220px;" >Start</button>--%>
 
@@ -274,5 +278,4 @@
 
         </script>--%>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnRestart" runat="server" Height="145px" Text="Restart" Width="220px" OnClick="btnRestart_Click" />
-    </asp:Content>
+            </asp:Content>

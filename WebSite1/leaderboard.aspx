@@ -1,5 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeFile="leaderboard.aspx.cs" Inherits="Default3" %>
 
+
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
     <asp:PlaceHolder runat="server">
