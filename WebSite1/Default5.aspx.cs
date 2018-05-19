@@ -83,7 +83,7 @@ public partial class Default5 : System.Web.UI.Page
             strMode = "M";
             strNumber = "1";
         }
-        
+
         int dividingNumber = 0;
 
         dividingNumber = Convert.ToInt32(strNumber);
@@ -167,6 +167,12 @@ public partial class Default5 : System.Web.UI.Page
                 lblNo10B.Text = strNumber;
                 lblNo11B.Text = strNumber;
                 lblNo12B.Text = strNumber;
+
+                if (lblNo1A.Text != "10"|| lblNo1A.Text != "11" || lblNo1A.Text != "12")
+                {
+
+                }
+
 
                 if (strMode == "A")
                 {
