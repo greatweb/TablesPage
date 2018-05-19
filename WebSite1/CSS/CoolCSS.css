@@ -53,9 +53,10 @@ table {
     width: 224px;
 }
 
-td{
-    min-width: 23px;
-}
+/*td{
+    min-width: 2px;
+    display: flex;
+}*/
 
 .tableClass {
     white-space: nowrap;
