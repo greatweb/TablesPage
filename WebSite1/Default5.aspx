@@ -18,7 +18,7 @@
                 <td>
                     <asp:Label ID="lblNo1B" runat="server" Text="lblNo1A | " /></td>
                 <td>
-                    <asp:TextBox ID="txtAns1" runat="server" autocomplete="false" AutoCompleteType="Disabled" /></td>
+                    <asp:TextBox ID="txtAns1" runat="server" autocomplete="false" onkeydown="if(event.keyCode==13) {event.keyCode=9;}" AutoCompleteType="Disabled" /></td>
                 <td>
                     <asp:Image ID="imgAnswer1" runat="server" Height="40px" Width="40px" />
                     <asp:Label ID="Label1" Visible="false" runat="server" Text=""></asp:Label>
@@ -137,7 +137,8 @@
         <asp:Image ID="SilverMedal" runat="server" Style="float: right" Width="100px" Height="100px" />
         <div style="width: 804px; float:right; height: 92px;">
         <asp:Button ID="btnConfirm" runat="server" Height="85px" Text="Confirm" Width="142px" OnClick="Button1_Click" style="float: left;"/>
-    <asp:Button ID="btnRestart" runat="server" Height="85px" Style="float: left;" Text="Restart" Width="142px" OnClick="btnRestart_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;  
+    &nbsp;<asp:Button ID="btnRestart" runat="server" Height="85px" Style="float: left;" Text="Restart" Width="142px" OnClick="btnRestart_Click" />
         </div>    
     <table class="tableClass">
             <tr>

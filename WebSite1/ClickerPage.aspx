@@ -10,19 +10,19 @@
         <asp:TextBox ID="scoreForm" type="hidden" name="score" value="0" runat="server"></asp:TextBox>
             &nbsp;<br />
         &nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox1"  runat="server" placeholder="Name" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
--&nbsp;<br/>
+        &nbsp;<br/>
             &nbsp;<br/>
             
         
-             &nbsp;<asp:Button ID="Button1" runat="server"   style="margin-left: 15px" Text="Submit Your Score" Width="167px" OnClick="Button1_Click" />
-
+             &nbsp;
 </div>
-        <input onclick="window.location.href='leaderboard.aspx'" style="height: 41px; width: 217px; margin-top: 0px;" type="button" value="Leaderboard" /><asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MaximGameConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Leaderboard]"></asp:SqlDataSource>
-
+    <asp:Button ID="Button1" runat="server"   style="margin-left: 15px" Text="Submit Your Score" Width="167px" OnClick="Button1_Click" />
+    <div style="float: right; width: 782px; height: 47px;">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MaximGameConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Leaderboard]"></asp:SqlDataSource>
+        </div>
          
     <h3>Your Score Is</h3>
-    <label for="score" id="score">0</label>
+    <label id="score">0</label>
     <h2 id="demo"></h2>
     <button type="button" id="btn" onclick="addScore()">Click Me!</button>
 
@@ -95,7 +95,7 @@
         function addScore() {
             score++;
             document.getElementById("score").innerHTML = score;
-            document.getElementById("scoreForm").value = score;
+            document.getElementById("MainContent_scoreForm").value = score;
 
 
 

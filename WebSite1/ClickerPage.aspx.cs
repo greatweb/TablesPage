@@ -20,7 +20,7 @@ public partial class ClickerPage : System.Web.UI.Page
         con.Open();
         SqlCommand cmd = con.CreateCommand();
         cmd.CommandType = CommandType.Text;
-        cmd.CommandText = "insert into leaderboard values ('" + TextBox1.Text + "','" + scoreForm.Text + "')";
+        cmd.CommandText = "insert into leaderboard values ('" + User.Identity.GetUserName() + "','" + scoreForm.Text + "')";
         cmd.ExecuteNonQuery();
         con.Close();
     }
@@ -36,7 +36,7 @@ public partial class ClickerPage : System.Web.UI.Page
         con.Open();
         SqlCommand cmd = con.CreateCommand();
         cmd.CommandType = CommandType.Text;
-        cmd.CommandText = "insert into leaderboard values ('" + TextBox1.Text + "','" + scoreForm.Text + "')";
+        cmd.CommandText = "insert into leaderboard values ('" + User.Identity.GetUserName() + "','" + scoreForm.Text + "')";
         cmd.ExecuteNonQuery();
         con.Close();
 
@@ -47,7 +47,7 @@ public partial class ClickerPage : System.Web.UI.Page
         con.Open();
         SqlCommand cmd = con.CreateCommand();
         cmd.CommandType = CommandType.Text;
-        cmd.CommandText = "insert into leaderboard values ('" + TextBox1.Text + "','" + scoreForm.Text + "')";
+        cmd.CommandText = "insert into leaderboard values ('" + User.Identity.GetUserName() + "','" + scoreForm.Text + "')";
         cmd.ExecuteNonQuery();
         con.Close();
     }

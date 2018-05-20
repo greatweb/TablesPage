@@ -76,11 +76,12 @@ th, td {
 }
 
 th {
-    background-color: #fcab68;
+    background-color: darkgrey;
+    color: white;
 }
 
 td {
-    background-color: mediumpurple;
+    background-color: lightgrey;
     text-align: center;
     width: 1870px;
 }
