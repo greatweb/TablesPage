@@ -26,7 +26,7 @@
             <p>
                 You Can See Your Results By Clicking On The Results Button Under The Other Buttons In The Tables Menu And Selecting The Tables You Want To View Your Results</p>
             <p>
-                <a class="btn btn-default" href="Default6.aspx">Results &raquo;</a>
+                <a class="btn btn-default" href="GraphMenu.aspx">Results &raquo;</a>
             </p>
         </div>
     </div>
